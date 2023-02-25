@@ -1,0 +1,11 @@
+.arrow {
+    --dimension: 20px;
+    --direction: 1px 1px 0 0;
+    top: calc(var(--dimension) / 4);
+    position: relative;
+    height: var(--dimension);
+    width: var(--dimension);
+    border: solid black 1px;
+    border-width: var(--direction);
+    transform: rotate(-45deg);
+}

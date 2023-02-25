@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    letter-spacing: 1px;
+}
+
+:root {
+    --beige: #EBEBE8;
+}
+
+#root {
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: var(--beige);
+}
+
+.row {
+  display: flex;
+}
+.col {
+  width: 100%;
+}
+.d-none {
+  display: none !important;
+}
+.h-none {
+  transform: scaleY(0) !important;
+}
+.d-abs {
+  position: absolute !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.container {
+  min-height: calc(100vh - 230px);
+}
+@font-face {
+    font-family: 'Helvetica-Thin';
+    src: local('HelveticaNeue-Thin'), url('../assets/fonts/HelveticaNeue.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: local('HelveticaNeue-Bold'), url('../assets/fonts/HelveticaNeue-Bold.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Helvetica-Medium';
+    src: local('HelveticaNeue-Medium'), url('../assets/fonts/HelveticaNeue-Medium.ttf') format('truetype');
+  }
+
+  @import './forms.css';

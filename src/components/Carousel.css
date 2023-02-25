@@ -1,0 +1,121 @@
+.carousel-container {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    min-height: calc(100vh - 245px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel-div {
+    width: 100%;
+    position: relative;
+}
+.white {
+    min-width: 1000px;
+}
+.carousel {
+    --step-width: 0;
+    --current-width: 0;
+
+    transform: translateX(calc(var(--step-width) + (-21px + 100vw - var(--current-width)) / 2));
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.main-pic {
+    cursor: pointer;
+}
+.side {
+    width: 20vw;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(to right, var(--beige), transparent);
+    cursor: pointer;
+    display: flex;
+}
+.right {
+    transform: scale(-1, 1);
+    right: 0;
+}
+.click-drag {
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-align: right;
+    width: 85%;
+    height: 15px;
+}
+.carousel-element {
+    padding: 20px 120px;
+    transition: filter .3s;
+}
+.children-pic-container {
+    transform: scaleY(1);
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: transform .5s;
+    overflow-y: hidden;
+    transform-origin: top;
+    margin-top: 6rem
+}
+.child-pic img {
+    max-width: 40vw;
+}
+.separator {
+    min-width: 1px;
+    min-height: 60vh;
+    background-color: black;
+    transition: min-height .3s;
+}
+.big {
+    min-height: 67vh;
+}
+.carousel-element-active .main-pic {
+    z-index: 2;
+    cursor: pointer;
+}
+.blur {
+    filter: blur(0.6rem);
+}
+.main-pic-container {
+    
+    transition: .3s transform;
+}
+.carousel-cross {
+    position: absolute;
+    right: 10vw;
+    top: 10px;
+    z-index: 2;
+}
+.text-container {
+    position: absolute;
+    display: none;
+    width: 100%;
+    bottom: -50px;
+}
+.focused .main-pic-container {
+    transform: scale(1.1);
+}
+.focused .text-container {
+    display: block;
+}
+.text-container h2 {
+    font-size: 15px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.text-container p {
+    font-size: 12px;
+    letter-spacing: .75px;
+    font-family: Helvetica;
+}

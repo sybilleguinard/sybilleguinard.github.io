@@ -1,0 +1,32 @@
+.label {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+input[type='file'] {
+    display: none;
+}
+.input-file {
+    width: 180px;
+    cursor: pointer;
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.error {
+    color: red;
+}
+.file-field {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    justify-items: stretch;
+    gap: 10px;
+    align-items: center;
+    text-transform: uppercase;
+}
+.file-field label {
+    text-align: right;
+}

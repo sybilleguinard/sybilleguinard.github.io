@@ -1,0 +1,18 @@
+.btn-submit {
+    background-color: white;
+    height: 60px;
+    padding: 0 30px;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-self: flex-end;
+}
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 900px;
+}
