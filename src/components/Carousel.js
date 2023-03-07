@@ -89,6 +89,7 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
     }
 
     let Content = children.map((element, key) => {
+        
         return (
             <React.Fragment key={key}>
                 {key !== 0 && <div className={'separator' + (childActive !== null ? ' big' : '')} />}
@@ -107,7 +108,6 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
                     }
                     ref={el => (ids.current[key] = el)}>
                     <div className="main-pic-container" onClick={() => toggleChildActive(key)}>
-                        {console.log('../uploads/projets/miniatures/' + element.miniature_path)}
                         <img
                             src={
                                 hasChildren

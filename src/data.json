@@ -2,21 +2,21 @@
     "projects": [
         {
             "id": 0,
-            "miniature_path": "igm1.png",
+            "miniature_path": "igm1.jpg",
             "title": "neurosciences",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
             "project_path": "versionpng.png"
         },
         {
             "id": 1,
-            "miniature_path": "igm1.png",
+            "miniature_path": "igm1.jpg",
             "title": "neurosciences",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
             "project_path": "versionpng.png"
         },
         {
             "id": 2,
-            "miniature_path": "igm1.png",
+            "miniature_path": "igm1.jpg",
             "title": "neurosciences",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
             "project_path": "versionpng.png"

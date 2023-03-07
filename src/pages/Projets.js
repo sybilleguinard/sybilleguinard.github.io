@@ -5,33 +5,6 @@ import Footer from '../components/Footer'
 import data from '../data.json'
 
 function Projets() {
-
-    const content = [
-        {
-            id: 0,
-            path: 'igm1.jpg',
-            title: 'Neurosciences',
-            desc: 'Lorem ipsum dolor sit amet coucou faut que ça fasse 2 lignes lipsum'
-        },
-        {
-            id: 1,
-            path: 'igm1.jpg',
-            title: 'Neurosciences',
-            desc: 'Lorem ipsum dolor sit amet coucou faut que ça fasse 2 lignes lipsum'
-        },
-        {
-            id: 3,
-            path: 'igm1.jpg',
-            title: 'Neurosciences',
-            desc: 'Lorem ipsum dolor sit amet coucou faut que ça fasse 2 lignes lipsum'
-        },
-        {
-            id: 40,
-            path: 'igm1.jpg',
-            title: 'Neurosciences',
-            desc: 'Lorem ipsum dolor sit amet coucou faut que ça fasse 2 lignes lipsum'
-        },
-    ]
     
   return (
     <>

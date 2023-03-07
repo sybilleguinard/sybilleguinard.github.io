@@ -5,6 +5,7 @@ import Arrow from '../components/Arrow';
 import './DetailProjet.css';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import data from '../data.json'
 
 function DetailProjet() {
     const values = [
@@ -29,7 +30,7 @@ function DetailProjet() {
     const to = useNavigate();
 
     const img = require('../uploads/projets/' +
-        values.filter((a) => String(a.id) === new URLSearchParams(window.location.search).get('id'))[0].path);
+    data.projects.filter((a) => String(a.id) === new URLSearchParams(window.location.search).get('id'))[0].project_path);
 
     const [windowScroll, setWindowScroll] = useState(0);
 
