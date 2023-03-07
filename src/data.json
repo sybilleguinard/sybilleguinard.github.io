@@ -45,7 +45,7 @@
             "miniature_path": "rsz_dsc_1094.jpg",
             "title": "Beretta M9",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "pictures_paths": [
+            "children_paths": [
                 "DSC_1097.jpg",
                 "DSC_1099.jpg",
                 "DSC_1106.jpg",
@@ -57,7 +57,7 @@
             "miniature_path": "rsz_dsc_1552.jpg",
             "title": "Beretta M9",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "pictures_paths": [
+            "children_paths": [
                 "DSC_1097.jpg",
                 "DSC_1099.jpg",
                 "DSC_1106.jpg",
@@ -69,7 +69,7 @@
             "miniature_path": "rsz_dsc_1094.jpg",
             "title": "Beretta M9",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "pictures_paths": [
+            "children_paths": [
                 "DSC_1097.jpg",
                 "DSC_1099.jpg",
                 "DSC_1106.jpg",
@@ -81,7 +81,7 @@
             "miniature_path": "rsz_dsc_1552.jpg",
             "title": "Beretta M9",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "pictures_paths": [
+            "children_paths": [
                 "DSC_1097.jpg",
                 "DSC_1099.jpg",
                 "DSC_1106.jpg",
@@ -93,7 +93,7 @@
             "miniature_path": "rsz_dsc_1552.jpg",
             "title": "Beretta M9",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "pictures_paths": [
+            "children_paths": [
                 "DSC_1097.jpg",
                 "DSC_1099.jpg",
                 "DSC_1106.jpg",

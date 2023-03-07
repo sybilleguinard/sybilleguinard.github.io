@@ -19,7 +19,7 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
         if (hasChildren) {
             if (childActive !== null) {
                 setSubPics(
-                    children[childActive].children.map((element, key) => {
+                    children[childActive].children_paths.map((element, key) => {
                         return (
                             <div className="child-pic" key={key}>
                                 <img src={require('../uploads/artworks/content/' + element)} />
