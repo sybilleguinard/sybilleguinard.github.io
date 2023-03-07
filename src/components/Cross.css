@@ -3,7 +3,7 @@
     height: 1px;
     background-color: black;
     transform: rotate(45deg);
-    transition: height .2s;
+    transition: height 0.2s;
 }
 .cross::after {
     content: '';
@@ -12,9 +12,10 @@
     background-color: black;
     transform: rotate(90deg);
     position: absolute;
-    transition: height .2s;
+    transition: height 0.2s;
 }
-.cross-container:hover .cross, .cross-container:hover .cross::after {
+.cross-container:hover .cross,
+.cross-container:hover .cross::after {
     height: 3px;
 }
 .cross-container {

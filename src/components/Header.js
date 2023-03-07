@@ -5,7 +5,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 function Header({ isSecondVisible }) {
     const to = useNavigate();
 
-    const path = useLocation().pathname
+    const path = useLocation().pathname;
 
     return (
         <section className="header">
@@ -23,10 +23,18 @@ function Header({ isSecondVisible }) {
                 </div>
             </div>
             <ul className="navbar">
-                <li className={path.includes("/artworks") ? "active" : ""} onClick={() => to('/artworks')}>Artworks</li>
-                <li className={path.includes("/projets") ? "active" : ""} onClick={() => to('/projets')}>Portfolio</li>
-                <li className={path.includes("/about") ? "active" : ""} onClick={() => to('/about')}>About</li>
-                <li className={path.includes("/contact") ? "active" : ""} onClick={() => to('/contact')}>Contact</li>
+                <li className={path.includes('/artworks') ? 'active' : ''} onClick={() => to('/artworks')}>
+                    Artworks
+                </li>
+                <li className={path.includes('/projets') ? 'active' : ''} onClick={() => to('/projets')}>
+                    Portfolio
+                </li>
+                <li className={path.includes('/about') ? 'active' : ''} onClick={() => to('/about')}>
+                    About
+                </li>
+                <li className={path.includes('/contact') ? 'active' : ''} onClick={() => to('/contact')}>
+                    Contact
+                </li>
             </ul>
         </section>
     );

@@ -5,32 +5,14 @@ import Arrow from '../components/Arrow';
 import './DetailProjet.css';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import data from '../data.json'
+import data from '../data.json';
 
 function DetailProjet() {
-    const values = [
-        {
-            id: 0,
-            path: 'versionpng.png',
-        },
-        {
-            id: 1,
-            path: 'versionpng.png',
-        },
-        {
-            id: 3,
-            path: 'versionpng.png',
-        },
-        {
-            id: 40,
-            path: 'versionpng.png',
-        },
-    ];
-
     const to = useNavigate();
 
     const img = require('../uploads/projets/' +
-    data.projects.filter((a) => String(a.id) === new URLSearchParams(window.location.search).get('id'))[0].project_path);
+        data.projects.filter(a => String(a.id) === new URLSearchParams(window.location.search).get('id'))[0]
+            .project_path);
 
     const [windowScroll, setWindowScroll] = useState(0);
 
@@ -49,9 +31,9 @@ function DetailProjet() {
 
     return (
         <>
-        <Helmet>
-            <title>Sybille Guinard</title>
-        </Helmet>
+            <Helmet>
+                <title>Sybille Guinard</title>
+            </Helmet>
             <Header />
             <div className="container">
                 <div className="go-back" onClick={() => to('/projets')}>

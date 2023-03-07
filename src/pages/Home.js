@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../stylesheets/main.css';
 import './Home.css';
 import Header from '../components/Header';
@@ -18,7 +18,7 @@ function Home() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if (!pause) setStep((step) => (step + 1) % 3);
+            if (!pause) setStep(step => (step + 1) % 3);
             else setPause(false);
         }, 10000);
         return () => clearInterval(interval);

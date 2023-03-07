@@ -9,7 +9,7 @@
     display: flex;
     width: 100%;
     transform: translateX(calc((21px - 100vw) * var(--step)));
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
 }
 .Home-carousel img {
     width: 100%;
@@ -22,7 +22,8 @@
     gap: 5px;
     width: 100%;
 }
-.Home-carousel-buttons div:hover, .Home-carousel-buttons .active {
+.Home-carousel-buttons div:hover,
+.Home-carousel-buttons .active {
     border-width: 4px;
 }
 .Home-carousel-buttons div {
@@ -30,6 +31,6 @@
     height: 17px;
     border-radius: 10px;
     border: 1px black solid;
-    transition: border .3s;
+    transition: border 0.3s;
     cursor: pointer;
 }

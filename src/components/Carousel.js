@@ -22,7 +22,7 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
                     children[childActive].children_paths.map((element, key) => {
                         return (
                             <div className="child-pic" key={key}>
-                                <img src={require('../uploads/artworks/content/' + element)} />
+                                <img src={require('../uploads/artworks/content/' + element)} alt="Détail" />
                             </div>
                         );
                     })
@@ -32,7 +32,7 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
                 setChildrenContainerClasses(' hidden');
                 setTimeout(() => {
                     window.scrollTo({ top: 0, behavior: 'smooth' });
-                }, 50)
+                }, 50);
                 setTimeout(() => {
                     setChildrenContainerClasses(' hidden h-none d-abs');
                 }, 500);
@@ -89,7 +89,6 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
     }
 
     let Content = children.map((element, key) => {
-        
         return (
             <React.Fragment key={key}>
                 {key !== 0 && <div className={'separator' + (childActive !== null ? ' big' : '')} />}
@@ -107,7 +106,7 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
                             : '')
                     }
                     ref={el => (ids.current[key] = el)}>
-                    <div className="main-pic-container" onClick={() => toggleChildActive(key)}>
+                    <div className="main-pic-container" alt="Artwork" onClick={() => toggleChildActive(key)}>
                         <img
                             src={
                                 hasChildren
