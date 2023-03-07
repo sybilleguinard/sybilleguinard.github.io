@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
+import { Helmet } from 'react-helmet';
 
 function Artworks() {
     const content = [
@@ -34,8 +35,11 @@ function Artworks() {
 
     return (
         <>
+        <Helmet>
+            <title>Sybille Guinard</title>
+        </Helmet>
             <Header />
-            <Carousel children={content} hasChildren childrenPath="../uploads/portfolio/content/" path="../uploads/portfolio/" />
+            <Carousel children={content} hasChildren  />
             <Footer />
         </>
     );

@@ -9,6 +9,8 @@ import '../stylesheets/main.css';
 import HomeAdmin from '../pages/admin/HomeAdmin';
 import Projets from '../pages/Projets';
 import DetailProjet from '../pages/DetailProjet';
+import Contact from '../pages/Contact';
+import About from '../pages/About';
 
 function App() {
     return (
@@ -19,6 +21,8 @@ function App() {
                     <Route path="/artworks" element={<Artworks/>} />
                     <Route path="/projets" element={<Projets/>} />
                     <Route path="/detail-projet" element={<DetailProjet/>} />
+                    <Route path="/contact" element={<Contact/>} />
+                    <Route path="/about" element={<About/>} />
 
                     <Route path='/admin-panel/home' element={<HomeAdmin />}/>
                     <Route path='/admin-panel/about' element={<AboutAdmin />}/>

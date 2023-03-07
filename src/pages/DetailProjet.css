@@ -4,12 +4,23 @@
     gap: 10px;
     margin-left: 7vw;
     height: 30px;
+    cursor: pointer;
 }
 .go-back p {
     font-size: 15px;
     letter-spacing: 1.5px;
     align-self: center;
 }
+.go-back:hover .arrow {
+    border-width: 3px 0 0 3px;
+}
 .detail-projet-img {
     width: 100%;
+}
+.to-top {
+    position: absolute;
+    position: fixed;
+    top: 88vh;
+    right: 70px;
+    cursor: pointer;
 }

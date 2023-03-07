@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica;
+    font-family: Helvetica-Thin;
     letter-spacing: 1px;
+    font-weight: 700;
 }
 
 :root {
@@ -37,10 +38,11 @@
 }
 .container {
   min-height: calc(100vh - 230px);
+  position: relative;
 }
 @font-face {
     font-family: 'Helvetica-Thin';
-    src: local('HelveticaNeue-Thin'), url('../assets/fonts/HelveticaNeue.ttf') format('truetype');
+    src: url('../assets/fonts/NimbusSansNovusT-UltraLight.ttf') format('truetype');
   }
 
 @font-face {

@@ -14,10 +14,10 @@
     font-size: 20px;
 }
 .logo {
-    font-weight: bold;
     font-size: 30px;
     letter-spacing: 1.5px;
     cursor: pointer;
+    font-family: Helvetica-Bold;
 }
 .navbar {
     display: flex;
@@ -25,7 +25,11 @@
     font-size: 17px;
     letter-spacing: 1.7px;
 }
-.navbar p {
+.navbar li {
     cursor: pointer;
     letter-spacing: 1.7px;
+    list-style: none;
+}
+.navbar .active {
+    font-family: Helvetica-Bold
 }

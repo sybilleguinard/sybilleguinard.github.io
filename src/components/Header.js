@@ -1,9 +1,11 @@
 import './Header.css';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function Header({ isSecondVisible }) {
     const to = useNavigate();
+
+    const path = useLocation().pathname
 
     return (
         <section className="header">
@@ -20,12 +22,12 @@ function Header({ isSecondVisible }) {
                     based in Lyon.
                 </div>
             </div>
-            <div className="navbar">
-                <p onClick={() => to('/projets')}>Portfolio</p>
-                <p onClick={() => to('/artworks')}>Artworks</p>
-                <p>About</p>
-                <p>Contact</p>
-            </div>
+            <ul className="navbar">
+                <li className={path.includes("/artworks") ? "active" : ""} onClick={() => to('/artworks')}>Artworks</li>
+                <li className={path.includes("/projets") ? "active" : ""} onClick={() => to('/projets')}>Portfolio</li>
+                <li className={path.includes("/about") ? "active" : ""} onClick={() => to('/about')}>About</li>
+                <li className={path.includes("/contact") ? "active" : ""} onClick={() => to('/contact')}>Contact</li>
+            </ul>
         </section>
     );
 }

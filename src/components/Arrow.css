@@ -8,4 +8,8 @@
     border: solid black 1px;
     border-width: var(--direction);
     transform: rotate(-45deg);
+    transition: border-width .1s;
+}
+.arrow:hover {
+    border-width: var(--hover);
 }

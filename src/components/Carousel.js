@@ -9,9 +9,9 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
     const [currentWidth, setCurrentWidth] = useState(995);
     const [childActive, setChildActive] = useState(null);
     const [subPics, setSubPics] = useState(<></>);
-    const [childrenContainerClasses, setChildrenContainerClasses] = useState(' h-none');
+    const [childrenContainerClasses, setChildrenContainerClasses] = useState(' hidden h-none');
 
-    const to = useNavigate()
+    const to = useNavigate();
 
     let ids = useRef(new Array(children.length).fill(null));
 
@@ -22,16 +22,19 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
                     children[childActive].children.map((element, key) => {
                         return (
                             <div className="child-pic" key={key}>
-                                <img src={require('../uploads/portfolio/content/' + element)} />
+                                <img src={require('../uploads/artworks/content/' + element)} />
                             </div>
                         );
                     })
                 );
                 setChildrenContainerClasses('');
             } else {
-                setChildrenContainerClasses(' h-none');
+                setChildrenContainerClasses(' hidden');
                 setTimeout(() => {
-                    setChildrenContainerClasses(' h-none d-abs');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 50)
+                setTimeout(() => {
+                    setChildrenContainerClasses(' hidden h-none d-abs');
                 }, 500);
             }
         }
@@ -82,8 +85,7 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
                 else setChildActive(null);
             } else if (childActive === null) setStep(key);
             else setChildActive(null);
-        } else 
-        to('/detail-projet?id=' + children[key].id)
+        } else to('/detail-projet?id=' + children[key].id);
     }
 
     let Content = children.map((element, key) => {
@@ -103,13 +105,14 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
                             ? ' focused'
                             : '')
                     }
-                    ref={(el) => (ids.current[key] = el)}>
+                    ref={el => (ids.current[key] = el)}>
                     <div className="main-pic-container" onClick={() => toggleChildActive(key)}>
+                        {console.log('../uploads/projets/miniatures/' + element.miniature_path)}
                         <img
                             src={
                                 hasChildren
-                                    ? require('../uploads/portfolio/' + element.path)
-                                    : require('../uploads/projets/miniatures/' + element.path)
+                                    ? require('../uploads/artworks/' + element.miniature_path)
+                                    : require('../uploads/projets/miniatures/' + element.miniature_path)
                             }
                             alt="Image du portfolio"
                             className="main-pic"
@@ -145,13 +148,14 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
                 </div>
                 {hasChildren ? (
                     <div className={'children-pic-container' + (childActive !== null ? '' : childrenContainerClasses)}>
+                        <div className="children-cache" />
                         {subPics}
                     </div>
                 ) : (
                     <></>
                 )}
             </section>
-            <p className={'click-drag' + (childActive !== null ? ' d-none' : '')}>Click or drag</p>
+            {/* <p className={'click-drag' + (childActive !== null ? ' d-none' : '')}>Click or drag</p> */}
         </>
     );
 }

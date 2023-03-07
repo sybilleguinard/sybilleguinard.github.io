@@ -1,0 +1,111 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "miniature_path": "igm1.png",
+            "title": "neurosciences",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+            "project_path": "versionpng.png"
+        },
+        {
+            "id": 1,
+            "miniature_path": "igm1.png",
+            "title": "neurosciences",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+            "project_path": "versionpng.png"
+        },
+        {
+            "id": 2,
+            "miniature_path": "igm1.png",
+            "title": "neurosciences",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+            "project_path": "versionpng.png"
+        }
+    ],
+    "home": [
+        {
+            "id": 0,
+            "image_path": "img1.png",
+            "project_id": 0
+        },
+        {
+            "id": 1,
+            "image_path": "img2.png",
+            "project_id": 1
+        },
+        {
+            "id": 2,
+            "image_path": "img3.png",
+            "project_id": 2
+        }
+    ],
+    "artworks": [
+        {
+            "id": 0,
+            "miniature_path": "rsz_dsc_1094.jpg",
+            "title": "Beretta M9",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+            "pictures_paths": [
+                "DSC_1097.jpg",
+                "DSC_1099.jpg",
+                "DSC_1106.jpg",
+                "DSC_1107.jpg"
+            ]
+        },
+        {
+            "id": 1,
+            "miniature_path": "rsz_dsc_1552.jpg",
+            "title": "Beretta M9",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+            "pictures_paths": [
+                "DSC_1097.jpg",
+                "DSC_1099.jpg",
+                "DSC_1106.jpg",
+                "DSC_1107.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "miniature_path": "rsz_dsc_1094.jpg",
+            "title": "Beretta M9",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+            "pictures_paths": [
+                "DSC_1097.jpg",
+                "DSC_1099.jpg",
+                "DSC_1106.jpg",
+                "DSC_1107.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "miniature_path": "rsz_dsc_1552.jpg",
+            "title": "Beretta M9",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+            "pictures_paths": [
+                "DSC_1097.jpg",
+                "DSC_1099.jpg",
+                "DSC_1106.jpg",
+                "DSC_1107.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "miniature_path": "rsz_dsc_1552.jpg",
+            "title": "Beretta M9",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+            "pictures_paths": [
+                "DSC_1097.jpg",
+                "DSC_1099.jpg",
+                "DSC_1106.jpg",
+                "DSC_1107.jpg"
+            ]
+        }
+    ],
+    "contact": {
+        "email": "sybille.guinard@gmail.com"
+    },
+    "about": {
+        "avatar_path":  "img1.png",
+        "desc": "<br/>Lorem ipsum dolor sit amet, consectetur adipiqsdscing elit. Nam ipsum dui, fring<br/>Lorem ipsdddum dolor sit amet, consectetur adipiscing<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ipsum dui, fringilla ac orci in, cursus congue lacus. Etiam quam nisl, vestibulum eget sem vitae, molestie posuere ipsum. Etiam vulputate urna eu lacus pretium accumsan. Nunc accumsan magna vitae magna auctor pretium."
+    }
+}

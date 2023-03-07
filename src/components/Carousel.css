@@ -8,6 +8,7 @@
     align-items: center;
 }
 .carousel-div {
+    padding: 20px 0;
     width: 100%;
     position: relative;
 }
@@ -53,19 +54,31 @@
 }
 .carousel-element {
     padding: 20px 120px;
-    transition: filter .3s;
+    transition: filter 0.3s;
 }
 .children-pic-container {
-    transform: scaleY(1);
+    max-width: 1300px;
     display: flex;
     margin: auto;
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
-    transition: transform .5s;
     overflow-y: hidden;
     transform-origin: top;
-    margin-top: 6rem
+    margin-top: 60px;
+    position: relative;
+}
+.children-cache {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--beige);
+    transition: transform 0.5s;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+.hidden .children-cache {
+    transform: scaleY(1);
 }
 .child-pic img {
     max-width: 40vw;
@@ -74,7 +87,7 @@
     min-width: 1px;
     min-height: 60vh;
     background-color: black;
-    transition: min-height .3s;
+    transition: min-height 0.3s;
 }
 .big {
     min-height: 67vh;
@@ -87,8 +100,7 @@
     filter: blur(0.6rem);
 }
 .main-pic-container {
-    
-    transition: .3s transform;
+    transition: 0.3s transform;
 }
 .carousel-cross {
     position: absolute;
@@ -112,10 +124,9 @@
     font-size: 15px;
     letter-spacing: 1.7px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-family: Helvetica-Bold;
 }
 .text-container p {
     font-size: 12px;
-    letter-spacing: .75px;
-    font-family: Helvetica;
+    letter-spacing: 0.75px;
 }
