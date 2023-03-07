@@ -1,9 +1,0 @@
-.col img {
-    width: 300px;
-}
-.col-home-admin {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
