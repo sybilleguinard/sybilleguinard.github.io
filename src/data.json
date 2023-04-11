@@ -45,67 +45,42 @@
             "miniature_path": "rsz_dsc_1094.jpg",
             "title": "Beretta M9",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "children_paths": [
-                "DSC_1097.jpg",
-                "DSC_1099.jpg",
-                "DSC_1106.jpg",
-                "DSC_1107.jpg"
-            ]
+            "children_paths": ["DSC_1097.jpg", "DSC_1099.jpg", "DSC_1106.jpg", "DSC_1107.jpg"]
         },
         {
             "id": 1,
             "miniature_path": "rsz_dsc_1552.jpg",
             "title": "Beretta M9",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "children_paths": [
-                "DSC_1097.jpg",
-                "DSC_1099.jpg",
-                "DSC_1106.jpg",
-                "DSC_1107.jpg"
-            ]
+            "children_paths": ["DSC_1097.jpg", "DSC_1099.jpg", "DSC_1106.jpg", "DSC_1107.jpg"]
         },
         {
             "id": 2,
             "miniature_path": "rsz_dsc_1094.jpg",
             "title": "Beretta M9",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "children_paths": [
-                "DSC_1097.jpg",
-                "DSC_1099.jpg",
-                "DSC_1106.jpg",
-                "DSC_1107.jpg"
-            ]
+            "children_paths": ["DSC_1097.jpg", "DSC_1099.jpg", "DSC_1106.jpg", "DSC_1107.jpg"]
         },
         {
             "id": 3,
             "miniature_path": "rsz_dsc_1552.jpg",
             "title": "Beretta M9",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "children_paths": [
-                "DSC_1097.jpg",
-                "DSC_1099.jpg",
-                "DSC_1106.jpg",
-                "DSC_1107.jpg"
-            ]
+            "children_paths": ["DSC_1097.jpg", "DSC_1099.jpg", "DSC_1106.jpg", "DSC_1107.jpg"]
         },
         {
             "id": 4,
             "miniature_path": "rsz_dsc_1552.jpg",
             "title": "Beretta M9",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "children_paths": [
-                "DSC_1097.jpg",
-                "DSC_1099.jpg",
-                "DSC_1106.jpg",
-                "DSC_1107.jpg"
-            ]
+            "children_paths": ["DSC_1097.jpg", "DSC_1099.jpg", "DSC_1106.jpg", "DSC_1107.jpg"]
         }
     ],
     "contact": {
         "email": "sybille.guinard@gmail.com"
     },
     "about": {
-        "avatar_path":  "img1.png",
-        "desc": "<br/>Lorem ipsum dolor sit amet, consectetur adipiqsdscing elit. Nam ipsum dui, fring<br/>Lorem ipsdddum dolor sit amet, consectetur adipiscing<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ipsum dui, fringilla ac orci in, cursus congue lacus. Etiam quam nisl, vestibulum eget sem vitae, molestie posuere ipsum. Etiam vulputate urna eu lacus pretium accumsan. Nunc accumsan magna vitae magna auctor pretium."
+        "avatar_path": "img1.png",
+        "desc": "Student at E-artsup Lyon, Grand École program.#nI’m driven by the sense of satisfaction that comes from successfully communicating visually the ideas or concepts that I feel internally.#nHere you will find some of my creative works, made on various mediums, both digital and manual, through which I hope to best reflect my ideas and vision of art and communication.#n(Although the number of small dots on my drawings might suggest otherwise, I’m of sound mind)#gCurrently looking for a work-study program !\nEn recherche d’alternance !"
     }
 }

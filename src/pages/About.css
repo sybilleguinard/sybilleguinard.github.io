@@ -5,11 +5,16 @@
     width: 100%;
 }
 .about img {
-    max-height: 30vh;
+    max-height: 50vh;
+    margin-bottom: 40px;
 }
 .about-text {
     width: 40vw;
     font-size: 20px;
+    white-space: pre-line;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .about-text br {
     content: '';
