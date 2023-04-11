@@ -7,6 +7,7 @@ import Projets from '../pages/Projets';
 import DetailProjet from '../pages/DetailProjet';
 import Contact from '../pages/Contact';
 import About from '../pages/About';
+import Error from '../pages/Error';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                     <Route path="/detail-projet" element={<DetailProjet />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="*" element={<Error />} />
                 </Routes>
             </Router>
         </HelmetProvider>

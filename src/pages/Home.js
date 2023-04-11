@@ -7,6 +7,7 @@ import img1 from '../uploads/home/img1.png';
 import img2 from '../uploads/home/img2.png';
 import img3 from '../uploads/home/img3.png';
 import { Helmet } from 'react-helmet';
+import data from '../data.json'
 
 function Home() {
     const [step, setStep] = useState(0);
@@ -18,11 +19,11 @@ function Home() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if (!pause) setStep(step => (step + 1) % 3);
+            if (!pause) setStep(step => (step + 1) % data.home.length);
             else setPause(false);
         }, 10000);
         return () => clearInterval(interval);
-    }, [, pause]);
+    }, [pause]);
 
     return (
         <>
