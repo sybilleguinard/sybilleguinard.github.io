@@ -10,7 +10,7 @@ import data from '../data.json';
 function DetailProjet() {
     const to = useNavigate();
 
-    const img = require('../uploads/projets/' +
+    const img = require('../uploads/projets/presentations/desktop/' +
         data.projects.filter(a => String(a.id) === new URLSearchParams(window.location.search).get('id'))[0]
             .project_path);
 

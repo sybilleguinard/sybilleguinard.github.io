@@ -2,24 +2,31 @@
     "projects": [
         {
             "id": 0,
-            "miniature_path": "igm1.jpg",
-            "title": "neurosciences",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "project_path": "versionpng.png"
+            "miniature_path": "link_miniature.png",
+            "title": "L-ink",
+            "desc": "As a result of a UI/UX project, L-ink is a fictional platform aimed at connecting tattoo artists and clients. From financial management to appointment scheduling, and highlighting the tattoo artists&#39; projects, L-ink positions itself as a comprehensive tool for tattoo artists and a practical and stylish discovery space for clients.",
+            "project_path": "link_desktop.png"
         },
         {
             "id": 1,
-            "miniature_path": "igm1.jpg",
-            "title": "neurosciences",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "project_path": "versionpng.png"
+            "miniature_path": "ns_1_miniature.png",
+            "title": "Neurosciences Part I / CAUSES",
+            "desc": "Posters serie inspired by a mind map from the Integrated Mental Health Science course (NURS603) at Auckland University of Technology, explaining the various causes of depression. Project&#39;s DNA : illustrate science.",
+            "project_path": "ns_1_desktop.png"
         },
         {
             "id": 2,
-            "miniature_path": "igm1.jpg",
-            "title": "neurosciences",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "project_path": "versionpng.png"
+            "miniature_path": "ns_2.png",
+            "title": "Neurosciences Part II / TREATMENTS",
+            "desc": "Posters serie inspired by a mind map from Auckland University of Technology&#39;s Integrated Mental Health Science (NURS603) course, explaining the different treatments for depression. DNA of the project: illustrating science.",
+            "project_path": "ns_2.png"
+        },
+        {
+            "id": 2,
+            "miniature_path": "serge_lutens.png",
+            "title": "Serge Lutens",
+            "desc": "Creation of a new visual identity for the Serge Lutens brand, as well as an anniversary campaign based on the new identity concept, on the occasion of the 30th anniversary of the « Féminité du Bois » perfume.",
+            "project_path": "serge_lutens.png"
         }
     ],
     "home": [

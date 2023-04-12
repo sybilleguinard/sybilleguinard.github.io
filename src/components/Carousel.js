@@ -111,7 +111,7 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
                             src={
                                 hasChildren
                                     ? require('../uploads/artworks/' + element.miniature_path)
-                                    : require('../uploads/projets/miniatures/' + element.miniature_path)
+                                    : require('../uploads/projets/miniatures/desktop/' + element.miniature_path)
                             }
                             alt="Image du portfolio"
                             className="main-pic"
