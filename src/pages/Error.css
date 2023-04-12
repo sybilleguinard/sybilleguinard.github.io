@@ -1,4 +1,4 @@
-.error-404 {
+.error-404, .error-404 span {
     font-family: Helvetica-Bold;
     font-size: 15rem;
     text-align: center;
@@ -8,4 +8,19 @@
     height: calc(100vh - 230px);
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 900px) {
+    .error-404 {
+        font-size: 10rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .error-404 {
+        font-size: 6rem;
+    }
+    .error-404 span {
+        font-size: 10rem;
+    }
 }

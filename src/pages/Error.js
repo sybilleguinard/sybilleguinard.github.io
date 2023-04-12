@@ -8,7 +8,7 @@ function Error() {
         <>
             <Header />
             <div className="error-404-container">
-                <div className="error-404">ERROR 404</div>
+                <div className="error-404">ERROR<span> 404</span></div>
             </div>
             <Footer />
         </>
