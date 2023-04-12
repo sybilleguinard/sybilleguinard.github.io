@@ -1,20 +1,22 @@
 .header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     text-transform: uppercase;
     height: 150px;
     align-items: center;
     padding: 0 5vw;
     background-color: var(--beige);
 }
+.logo-second:first-child {
+    top: 38px;
+}
 .logo-second {
-    --visible: visible;
-    visibility: var(--visible);
+    position: absolute;
     font-size: 20px;
 }
 .logo {
-    font-size: 30px;
+    font-size: 1.8rem;
     letter-spacing: 1.5px;
     cursor: pointer;
     font-family: Helvetica-Bold;
@@ -25,11 +27,72 @@
     font-size: 17px;
     letter-spacing: 1.7px;
 }
-.navbar li {
-    cursor: pointer;
-    letter-spacing: 1.7px;
+.navbar a {
     list-style: none;
+    text-decoration: none;
+    color: black;
+    z-index: 2;
 }
 .navbar .active {
     font-family: Helvetica-Bold;
+}
+.burger-container {
+    width: 32px;
+    border-radius: 100%;
+    height: 32px;
+    padding: 5px;
+    align-items: center;
+    display: none;
+    position: relative;
+    top: -10px;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.burger-container:hover,
+.burger-container.active {
+    transform: rotate(90deg);
+}
+.burger-container:hover .burger,
+.burger-container.active .burger {
+    height: 3px;
+}
+.burger {
+    background-color: black;
+    width: 30px;
+    height: 1px;
+    transition: height 0.2s;
+}
+
+@media (max-width: 1000px) {
+    .burger-container {
+        display: flex;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        position: fixed;
+        right: 5vw;
+        top: 100px;
+        gap: 30px;
+        padding: 30px;
+        align-items: center;
+    }
+    .navbar.active:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+        backdrop-filter: blur(15px);
+        background-color: rgba(182, 182, 182, 0.2);
+    }
 }

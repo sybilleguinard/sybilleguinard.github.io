@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Arrow from '../components/Arrow';
 import './DetailProjet.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import data from '../data.json';
 
@@ -36,10 +36,10 @@ function DetailProjet() {
             </Helmet>
             <Header />
             <div className="container">
-                <div className="go-back" onClick={() => to('/projets')}>
+                <Link className="go-back" to={-1}>
                     <Arrow direction="1px 0 0 1px" hover="3px 0 0 3px" />
                     <p>Voir les autres projets</p>
-                </div>
+                </Link>
                 <img className="detail-projet-img" src={img} alt="Description d'un projet" />
                 <Arrow
                     onClick={scrollTop}
