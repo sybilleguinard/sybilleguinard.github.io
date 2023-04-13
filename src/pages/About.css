@@ -22,3 +22,20 @@
     height: 40px;
     display: block;
 }
+.logo-container-about {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo-container-about .logo-second {
+    position: relative;
+    top: auto;
+}
+.logo-container-about .logo {
+    text-transform: uppercase;
+}
+@media (max-width: 1000px) {
+    .about-text {
+        width: 90vw;
+        font-size: 13px;
+    }
+}
