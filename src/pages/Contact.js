@@ -9,8 +9,11 @@ function Contact() {
         <>
             <Header isSecondVisible />
             <div className="container contact-container">
-                <a href="mailto:sybille.guinard@gmail.com">{data.contact.email}</a>
+                <div>
+                <p>Contact me on:</p>
+                <a href="mailto:sybille.guinard@gmail.com">{data.contact.email}</a></div>
             </div>
+            <p className='arrows-desc'>Discover more on:</p>
             <Footer withArrow />
         </>
     );

@@ -8,7 +8,7 @@ function Footer({ withArrow }) {
         <section className="footer">
             <div className="links">
                 <a href="https://www.behance.net/sybilleguinard" target="_blank">
-                    <div className={'arrows-container-footer' + (withArrow ? '' : ' d-none')}>
+                    <div className={'arrows-container-footer arrows-container-footer-sm' + (withArrow ? '' : ' d-none')}>
                         <img src={sm} alt="Petite flèche" />
                     </div>
                     Behance
