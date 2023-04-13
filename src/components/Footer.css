@@ -36,3 +36,11 @@
     justify-content: center;
     bottom: 40px;
 }
+@media (max-width: 1000px) {
+    .copyright {
+        display: none;
+    }
+    .footer {
+        justify-content: center;
+    }
+}
