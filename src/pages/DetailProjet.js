@@ -37,7 +37,7 @@ function DetailProjet() {
             <Header />
             <div className="container">
                 <Link className="go-back" to={-1}>
-                    <Arrow direction="1px 0 0 1px" hover="3px 0 0 3px" />
+                    <Arrow direction="1px 0 0 1px" hover="3px 0 0 3px" dimension="15px" />
                     <p>Voir les autres projets</p>
                 </Link>
                 <img className="detail-projet-img" src={img} alt="Description d'un projet" />
@@ -46,6 +46,7 @@ function DetailProjet() {
                     direction="1px 1px 0 0"
                     className={'to-top' + (windowScroll ? '' : ' d-none')}
                     hover="3px 3px 0 0"
+                    dimension="15px"
                 />
             </div>
             <Footer />

@@ -109,6 +109,7 @@
     z-index: 2;
 }
 .text-container {
+    padding-top: 19px;
     opacity: 0;
     transition: opacity 0.2s;
     width: 100%;
@@ -120,14 +121,15 @@
     opacity: 1;
 }
 .text-container h2 {
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 1.7px;
     text-transform: uppercase;
-    font-family: Helvetica-Bold;
+    font-family: Helvetica-Medium;
 }
 .text-container p {
-    font-size: 12px;
-    letter-spacing: 0.75px;
+    padding-top: 4px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
 }
 @media (max-width: 1000px) {
     .carousel-container {

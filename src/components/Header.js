@@ -106,8 +106,8 @@ function Header({ isSecondVisible, isSecondMobileVisible }) {
                 <div className="burger" />
             </div>
             <nav className={'navbar ' + (burgerActive && 'active ') + (path === '/' && ' navbar-home')}>
-                <NavLink to={'/artworks'}>Artworks</NavLink>
                 <NavLink to={'/portfolio'}>Portfolio</NavLink>
+                <NavLink to={'/artworks'}>Artworks</NavLink>
                 <NavLink to={'/about'}>About</NavLink>
                 <NavLink to={'/contact'}>Contact</NavLink>
             </nav>

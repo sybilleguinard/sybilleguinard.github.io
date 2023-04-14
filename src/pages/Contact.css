@@ -3,29 +3,39 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 150px;
-    justify-content: flex-start;
+    justify-content: center;
+    padding: 0 0 60px 0;
 }
+.contact-container p {
+    display: none;
+}
+
 .contact-container a {
-    font-family: Helvetica-Bold;
+    font-family: Helvetica-Medium;
     text-transform: uppercase;
     color: black;
+    font-size: 14px;
+    letter-spacing: 2px;
     text-decoration: none;
 }
 .arrows-desc {
+    display: none;
     position: fixed;
-    bottom: calc(80px + 42vh);
+    bottom: calc(80px + 31vh);
     width: 100%;
-    left: calc(5vw + 20px)
+    left: calc(5vw + 20px);
 }
 @media (max-width: 1000px) {
     .contact-container {
-        padding-top: 80px;
+        padding: 80px 0 0 0;
+        justify-content: flex-start;
     }
     .contact-container p {
         font-size: 12px;
+        display: block;
     }
     .arrows-desc {
+        display: block;
         font-size: 12px;
         text-align: center;
         padding-right: 100px;

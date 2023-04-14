@@ -3,10 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica-Thin;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     font-weight: 700;
+    font-size: 12px;
 }
-
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--beige);
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: black;
+}
 :root {
     --beige: #ebebe8;
 }
@@ -14,14 +24,20 @@ a {
     color: black;
     text-decoration: none;
 }
+b {
+    font-weight: normal;
+    font-family: Helvetica-Medium;
+    letter-spacing: 1px;
+}
+p {
+    letter-spacing: 2px;
+}
 #root {
     width: 100vw;
     max-width: 100%;
     min-height: 100vh;
     background-color: var(--beige);
-}
-b {
-    font-family: Helvetica-Bold;
+    overflow-x: hidden;
 }
 .row {
     display: flex;
@@ -42,7 +58,7 @@ b {
     cursor: pointer;
 }
 .container {
-    min-height: calc(100vh - 230px);
+    min-height: calc(100vh - 190px);
     position: relative;
 }
 
@@ -54,12 +70,12 @@ b {
 
 @font-face {
     font-family: 'Helvetica-Thin';
-    src: url('../assets/fonts/NimbusSansNovusT-UltraLight.ttf') format('truetype');
+    src: url('../assets/fonts/HelveticaNeue-UltraLight-06.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Helvetica-Bold';
-    src: local('HelveticaNeue-Bold'), url('../assets/fonts/HelveticaNeue-Bold.ttf') format('truetype');
+    src: local('HelveticaNeue-Bold'), url('../assets/fonts/HelveticaNeue-Bold-02.ttf') format('truetype');
 }
 
 @font-face {
