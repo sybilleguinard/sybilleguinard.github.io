@@ -78,7 +78,6 @@ function Carousel({ children, hasChildren }) {
             setStep(step + 1);
             if (step === content.length - 3) {
                 let child = ref.current.children[5].firstChild;
-                console.log(child);
 
                 setTimeout(() => {
                     ref.current.style.transition = '';
@@ -101,7 +100,6 @@ function Carousel({ children, hasChildren }) {
         if (childActive === null) {
             setStep(step - 1);
             if (step === 2) {
-                console.log("zebi");
                 let child = ref.current.children[ref.current.children.length - 6].firstChild;
 
                 setTimeout(() => {
@@ -129,7 +127,7 @@ function Carousel({ children, hasChildren }) {
                 else setChildActive(null);
             } else if (childActive === null) setStep(key);
             else setChildActive(null);
-        } else to('/detail-projet?id=' + children[key].id);
+        } else to('/detail-projet?id=' + children[key - 2].id);
     }
 
     let Content = content.map((element, key) => {
@@ -199,6 +197,8 @@ function Carousel({ children, hasChildren }) {
                     <></>
                 )}
             </section>
+                        <p className={'click-drag' + (childActive !== null ? ' d-none' : '')}>Click to view more :)</p>
+
         </>
     );
 }

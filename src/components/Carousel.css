@@ -49,13 +49,14 @@
 }
 .click-drag {
     text-transform: uppercase;
-    font-family: Helvetica;
-    font-weight: bold;
-    font-size: 12px;
+    font-family: Helvetica-Medium;
+    font-size: 10px;
     letter-spacing: 1.2px;
     text-align: right;
     width: 85%;
     height: 15px;
+    position: relative;
+    top: -15px;
 }
 .carousel-element {
     padding: 20px 120px;
