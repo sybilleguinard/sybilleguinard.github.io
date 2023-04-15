@@ -6,7 +6,8 @@
     height: 110px;
     align-items: center;
     padding: 0 5vw;
-    background-color: var(--beige);
+    z-index: 2;
+    position: relative;
 }
 .logo-second:first-child {
     top: 30px;

@@ -10,8 +10,6 @@ function Header({ isSecondVisible, isSecondMobileVisible }) {
     const [burgerActive, setBurgerActive] = useState(false);
     const path = useLocation().pathname;
 
-    console.log(path);
-
     const LogoContainer = () => {
         if (width > 1000)
             switch (path) {
@@ -93,7 +91,6 @@ function Header({ isSecondVisible, isSecondMobileVisible }) {
                     );
             }
     };
-    useEffect(() => console.log(burgerActive), [burgerActive]);
 
     return (
         <section className={'header ' + (path === '/' && ' home')}>

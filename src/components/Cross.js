@@ -3,8 +3,8 @@ import React from 'react';
 
 function Cross({ className, onClick }) {
     return (
-        <div className={'cross-container ' + className}>
-            <div className="cross" onClick={onClick} />
+        <div onClick={onClick} className={'cross-container ' + className}>
+            <div className="cross" />
         </div>
     );
 }

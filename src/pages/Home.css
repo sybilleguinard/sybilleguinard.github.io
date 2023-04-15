@@ -8,12 +8,14 @@
 
     display: flex;
     width: 100%;
-    transform: translateX(calc((21px - 100vw) * var(--step)));
+    gap: 10px;
+    transform: translateX(calc(-100vw * var(--step)));
     transition: transform 0.5s ease;
 }
 .Home-carousel img {
     width: 100%;
     min-width: 100%;
+    cursor: pointer;
 }
 .Home-carousel-buttons {
     position: absolute;

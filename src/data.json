@@ -2,85 +2,78 @@
     "projects": [
         {
             "id": 0,
-            "miniature_path": "link_miniature.png",
+            "miniature_path": "miniature_link.svg",
             "title": "L-ink",
             "desc": "As a result of a UI/UX project, L-ink is a fictional platform aimed at connecting tattoo artists and clients. From financial management to appointment scheduling, and highlighting the tattoo artists&#39; projects, L-ink positions itself as a comprehensive tool for tattoo artists and a practical and stylish discovery space for clients.",
-            "project_path": "link_desktop.png"
+            "project_path": "link_presentation.png"
         },
         {
             "id": 1,
-            "miniature_path": "ns_1_miniature.png",
+            "miniature_path": "miniature_part1causes.svg",
             "title": "Neurosciences Part I / CAUSES",
             "desc": "Posters serie inspired by a mind map from the Integrated Mental Health Science course (NURS603) at Auckland University of Technology, explaining the various causes of depression. Project&#39;s DNA : illustrate science.",
-            "project_path": "ns_1_desktop.png"
+            "project_path": "ns_1_presentation.png"
         },
         {
             "id": 2,
-            "miniature_path": "ns_2.png",
+            "miniature_path": "miniature_part2treatment.svg",
             "title": "Neurosciences Part II / TREATMENTS",
             "desc": "Posters serie inspired by a mind map from Auckland University of Technology&#39;s Integrated Mental Health Science (NURS603) course, explaining the different treatments for depression. DNA of the project: illustrating science.",
-            "project_path": "versionpng.png"
+            "project_path": "ns_2_presentation.png"
         },
         {
-            "id": 2,
-            "miniature_path": "serge_lutens.png",
+            "id": 3,
+            "miniature_path": "miniature_serge_lutens.svg",
             "title": "Serge Lutens",
             "desc": "Creation of a new visual identity for the Serge Lutens brand, as well as an anniversary campaign based on the new identity concept, on the occasion of the 30th anniversary of the « Féminité du Bois » perfume.",
-            "project_path": "serge_lutens.png"
+            "project_path": "serge_lutens_presentation.png"
         }
     ],
     "home": [
         {
             "id": 0,
-            "image_path": "img1.png",
+            "image_path": "img1.webp",
             "project_id": 0
         },
         {
             "id": 1,
-            "image_path": "img2.png",
+            "image_path": "img2.webp",
             "project_id": 1
         },
         {
             "id": 2,
-            "image_path": "img3.png",
+            "image_path": "img3.webp",
             "project_id": 2
         }
     ],
     "artworks": [
         {
             "id": 0,
-            "miniature_path": "rsz_dsc_1094.jpg",
-            "title": "Beretta M9",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "children_paths": ["DSC_1097.jpg", "DSC_1099.jpg", "DSC_1106.jpg", "DSC_1107.jpg"]
+            "miniature_path": "girl1_PREMIERE.webp",
+            "title": "Women I",
+            "desc": "Format 14,8x21cm // experimentation matières et mouvements",
+            "children_paths": ["girl1_4.webp", "girl1_2.webp", "girl1_3.webp", "girl1_1.webp"]
         },
         {
             "id": 1,
-            "miniature_path": "rsz_dsc_1552.jpg",
-            "title": "Beretta M9",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "children_paths": ["DSC_1097.jpg", "DSC_1099.jpg", "DSC_1106.jpg", "DSC_1107.jpg"]
+            "miniature_path": "girl2_PREMIERE.webp",
+            "title": "Women II",
+            "desc": "Format 14,8x21cm // expérimentation matières et mouvements",
+            "children_paths": ["girl2_1.webp", "girl2_2.webp", "girl2_4.webp", "girl2_3.webp"]
         },
         {
             "id": 2,
-            "miniature_path": "rsz_dsc_1094.jpg",
-            "title": "Beretta M9",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "children_paths": ["DSC_1097.jpg", "DSC_1099.jpg", "DSC_1106.jpg", "DSC_1107.jpg"]
+            "miniature_path": "savannah_PREMIERE.webp",
+            "title": "Savannah",
+            "desc": "Format 31x41cm // rotring 0,1mm",
+            "children_paths": ["savannah_2.webp", "savannah_4.webp", "savannah_3.webp", "savannah_1.webp"]
         },
         {
             "id": 3,
-            "miniature_path": "rsz_dsc_1552.jpg",
-            "title": "Beretta M9",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "children_paths": ["DSC_1097.jpg", "DSC_1099.jpg", "DSC_1106.jpg", "DSC_1107.jpg"]
-        },
-        {
-            "id": 4,
-            "miniature_path": "rsz_dsc_1552.jpg",
-            "title": "Beretta M9",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "children_paths": ["DSC_1097.jpg", "DSC_1099.jpg", "DSC_1106.jpg", "DSC_1107.jpg"]
+            "miniature_path": "yuzmv_PREMIERE.webp",
+            "title": "Episode III « Les mains libres »",
+            "desc": "Peinture sur plexiglas",
+            "children_paths": ["yuzmv_1.webp", "yuzmv_2.webp", "yuzmv_3.webp", "yuzmv_4.webp"]
         }
     ],
     "contact": {

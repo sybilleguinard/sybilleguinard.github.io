@@ -2,10 +2,11 @@
     width: 100%;
     overflow-x: hidden;
     position: relative;
-    min-height: calc(100vh - 230px);
+    min-height: calc(100vh - 192px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 40px;
 }
 .carousel-div {
     padding: 20px 0;
@@ -28,9 +29,13 @@
 }
 .main-pic {
     cursor: pointer;
+    max-width: 520px;
+    max-height: 500px;
+    width: 520px;
+    object-fit: contain;
 }
 .side {
-    width: 20vw;
+    width: 30vw;
     position: absolute;
     top: 0;
     height: 100%;
@@ -61,11 +66,11 @@
     display: flex;
     margin: auto;
     gap: 10px;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     overflow-y: hidden;
     transform-origin: top;
-    margin-top: 70px;
+    margin-top: 90px;
     position: relative;
 }
 .children-cache {
@@ -109,16 +114,20 @@
     z-index: 2;
 }
 .text-container {
-    padding-top: 19px;
+    padding-top: 0;
+    max-height: 0;
     opacity: 0;
     transition: opacity 0.2s;
     width: 100%;
+    transition: max-height 0.3s, padding-top 0.3s;
 }
 .focused .main-pic-container {
     transform: scale(1.1);
 }
 .focused .text-container {
     opacity: 1;
+    padding-top: 19px;
+    max-height: 50px;
 }
 .text-container h2 {
     font-size: 14px;

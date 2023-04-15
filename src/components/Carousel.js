@@ -3,23 +3,39 @@ import React, { useEffect, useRef, useState } from 'react';
 import Cross from './Cross';
 import { useNavigate } from 'react-router-dom';
 
-function Carousel({ children, hasChildren, childrenPath, path }) {
-    const [step, setStep] = useState(0);
+function Carousel({ children, hasChildren }) {
+    const [step, setStep] = useState(2);
     const [stepWidth, setStepWidth] = useState(-1000 - 995 - 718);
     const [currentWidth, setCurrentWidth] = useState(995);
     const [childActive, setChildActive] = useState(null);
     const [subPics, setSubPics] = useState(<></>);
     const [childrenContainerClasses, setChildrenContainerClasses] = useState(' hidden h-none');
+    const [content, setContent] = useState(children);
+    const ref = useRef();
 
     const to = useNavigate();
 
     let ids = useRef(new Array(children.length).fill(null));
 
     useEffect(() => {
+        setContent([
+            children[children.length - 2],
+            children[children.length - 1],
+            ...children,
+            children[0],
+            children[1],
+        ]);
+        setTimeout(() => {
+            calcStepWidth();
+        }, 200);
+        ref.current.style.transition = 'all .3s ease';
+    }, []);
+
+    useEffect(() => {
         if (hasChildren) {
             if (childActive !== null) {
                 setSubPics(
-                    children[childActive].children_paths.map((element, key) => {
+                    content[childActive].children_paths.map((element, key) => {
                         return (
                             <div className="child-pic" key={key}>
                                 <img src={require('../uploads/artworks/content/' + element)} alt="Détail" />
@@ -44,12 +60,6 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
         calcStepWidth();
     }, [step]);
 
-    useEffect(() => {
-        setTimeout(() => {
-            calcStepWidth();
-        }, 100);
-    }, []);
-
     function calcStepWidth() {
         let tmp = [];
         for (let i = 0; i < ids.current.length; i++) {
@@ -65,15 +75,49 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
 
     function nextStep() {
         if (childActive === null) {
-            if (step < children.length - 1) setStep(step + 1);
-            else setStep(0);
+            setStep(step + 1);
+            if (step === content.length - 3) {
+                let child = ref.current.children[5].firstChild;
+                console.log(child);
+
+                setTimeout(() => {
+                    ref.current.style.transition = '';
+                    child.style.transition = '0s transform';
+                    child.lastChild.style.transition = '0s all'
+
+                    setStep(2);
+
+                    setTimeout(() => {
+                        ref.current.style.transition = 'all .3s ease';
+                        child.style.transition = '.3s transform';
+                        child.lastChild.style.transition = 'ax-height 0.3s, padding-top 0.3s';
+                    }, 100);
+                }, 300);
+            }
         } else setChildActive(null);
     }
 
     function previousStep() {
         if (childActive === null) {
-            if (step > 0) {
-                setStep(step - 1);
+            setStep(step - 1);
+            if (step === 2) {
+                console.log("zebi");
+                let child = ref.current.children[ref.current.children.length - 6].firstChild;
+
+                setTimeout(() => {
+                    ref.current.style.transition = '';
+
+                    child.style.transition = '0s transform';
+                    child.lastChild.style.transition = '0s all'
+                    setStep(content.length - 3);
+
+                    setTimeout(() => {
+                        ref.current.style.transition = 'all .3s ease';
+                        child.style.transition = '.3s transform';
+                        child.lastChild.style.transition = 'ax-height 0.3s, padding-top 0.3s';
+                    
+                    }, 100);
+                }, 300);
             }
         } else setChildActive(null);
     }
@@ -88,7 +132,7 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
         } else to('/detail-projet?id=' + children[key].id);
     }
 
-    let Content = children.map((element, key) => {
+    let Content = content.map((element, key) => {
         return (
             <React.Fragment key={key}>
                 {key !== 0 && <div className={'separator' + (childActive !== null ? ' big' : '')} />}
@@ -137,6 +181,7 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
                 <div className="carousel-div">
                     <div
                         className="carousel"
+                        ref={ref}
                         style={{ '--step-width': '-' + stepWidth + 'px', '--current-width': currentWidth + 'px' }}>
                         <div className="white" />
                         {Content}
@@ -154,7 +199,6 @@ function Carousel({ children, hasChildren, childrenPath, path }) {
                     <></>
                 )}
             </section>
-            {/* <p className={'click-drag' + (childActive !== null ? ' d-none' : '')}>Click or drag</p> */}
         </>
     );
 }

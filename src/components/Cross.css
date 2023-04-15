@@ -19,6 +19,7 @@
     height: 3px;
 }
 .cross-container {
+    padding-top: 15px;
     width: 30px;
     height: 30px;
     cursor: pointer;

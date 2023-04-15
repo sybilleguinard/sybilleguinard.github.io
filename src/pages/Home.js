@@ -3,9 +3,9 @@ import '../stylesheets/main.css';
 import './Home.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import img1 from '../uploads/home/img1.png';
-import img2 from '../uploads/home/img2.png';
-import img3 from '../uploads/home/img3.png';
+import img1 from '../uploads/home/img1.webp';
+import img2 from '../uploads/home/img2.webp';
+import img3 from '../uploads/home/img3.webp';
 import { Helmet } from 'react-helmet';
 import data from '../data.json'
 
