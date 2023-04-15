@@ -1,6 +1,6 @@
 .go-back {
     display: inline-flex;
-    gap: 10px;
+    gap: 8px;
     margin-left: 7vw;
     height: 30px;
     cursor: pointer;
@@ -10,7 +10,8 @@
 }
 .go-back p {
     letter-spacing: 1.5px;
-    align-self: center;
+    margin-top: 2px;
+    align-self: top;
 }
 .go-back:hover .arrow {
     border-width: 3px 0 0 3px;

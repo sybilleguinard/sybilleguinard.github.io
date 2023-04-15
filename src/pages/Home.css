@@ -28,8 +28,8 @@
     border-width: 4px;
 }
 .Home-carousel-buttons div {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
     border-radius: 10px;
     border: 1px black solid;
     transition: border 0.3s;
