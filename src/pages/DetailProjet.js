@@ -8,6 +8,7 @@ import data from '../data.json';
 function DetailProjet() {
 
     const [windowScroll, setWindowScroll] = useState(0);
+    console.log(window.location.href.split("=")[1]);
     const [content, setContent] = useState(data.projects.filter(a => String(a.id) === window.location.href.split("=")[1])[0]
     .project_path)
 
