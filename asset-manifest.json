@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc5836a2.css",
-    "main.js": "/static/js/main.e40954c6.js",
+    "main.css": "/static/css/main.c27feb59.css",
+    "main.js": "/static/js/main.e823ecc1.js",
     "static/media/serge_lutens_presentation.png": "/static/media/serge_lutens_presentation.317131aed58e3319915b.png",
     "static/media/ns_2_presentation.png": "/static/media/ns_2_presentation.d6139e4190fe419647cf.png",
     "static/media/ns_1_presentation.png": "/static/media/ns_1_presentation.d12304c6ce473d741127.png",
@@ -41,11 +41,11 @@
     "index.html": "/index.html",
     "static/media/lg-arrow.svg": "/static/media/lg-arrow.e569717f0eb869dc1e855f66b2006b03.svg",
     "static/media/sm-arrow.svg": "/static/media/sm-arrow.0d0f6d8e948adab6219d3644a7c7d78e.svg",
-    "main.cc5836a2.css.map": "/static/css/main.cc5836a2.css.map",
-    "main.e40954c6.js.map": "/static/js/main.e40954c6.js.map"
+    "main.c27feb59.css.map": "/static/css/main.c27feb59.css.map",
+    "main.e823ecc1.js.map": "/static/js/main.e823ecc1.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc5836a2.css",
-    "static/js/main.e40954c6.js"
+    "static/css/main.c27feb59.css",
+    "static/js/main.e823ecc1.js"
   ]
 }
