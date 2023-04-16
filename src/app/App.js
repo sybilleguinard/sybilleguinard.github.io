@@ -1,5 +1,5 @@
 import { HelmetProvider, Helmet } from 'react-helmet-async';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from '../pages/Home';
 import Artworks from '../pages/Artworks';
 import '../stylesheets/main.css';
@@ -16,7 +16,7 @@ function App() {
             <Helmet>
                 <title>Sybille Guinard</title>
             </Helmet>
-            <Router>
+            <HashRouter>
                 <Header />
 
                 <Routes>
@@ -28,7 +28,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="*" element={<Error />} />
                 </Routes>
-            </Router>
+            </HashRouter>
         </HelmetProvider>
     );
 }
