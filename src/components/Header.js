@@ -14,8 +14,8 @@ function Header() {
 
     useEffect(() => {
         const pages = {
-            with: ['/', '/about', '/contact'],
-            wihtout: ['/artworks', '/portfolio'],
+            with: ['/', '/about'],
+            wihtout: ['/artworks', '/portfolio', '/contact'],
         };
         const previous = history.length ? history[history.length - 1] : '';
 
@@ -31,7 +31,6 @@ function Header() {
     }, [path]);
 
     useEffect(() => {
-        console.log(fade);
         setTimeout(() => {
             if (fade === 'fade-in') setFade('');
             else if (fade === 'fade-out') setFade('d-none');
