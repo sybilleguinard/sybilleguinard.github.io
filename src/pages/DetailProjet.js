@@ -8,7 +8,7 @@ import data from '../data.json';
 function DetailProjet() {
 
     const [windowScroll, setWindowScroll] = useState(0);
-    const [content, setContent] = useState(data.projects.filter(a => String(a.id) === new URLSearchParams(window.location.search).get('id'))[0]
+    const [content, setContent] = useState(data.projects.filter(a => String(a.id) === window.location.href.split("=")[1])[0]
     .project_path)
 
     function scrollTop() {
