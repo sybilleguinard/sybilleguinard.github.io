@@ -7,7 +7,6 @@ import data from '../data.json';
 function Contact() {
     return (
         <>
-            <Header isSecondVisible />
             <div className="container contact-container">
                 <div>
                 <p>Contact me on:</p>

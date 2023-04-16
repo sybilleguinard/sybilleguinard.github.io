@@ -31,10 +31,6 @@ function DetailProjet() {
 
     return (
         <>
-            <Helmet>
-                <title>Sybille Guinard</title>
-            </Helmet>
-            <Header />
             <div className="container">
                 <Link className="go-back" to={-1}>
                     <Arrow direction="1px 0 0 1px" hover="3px 0 0 3px" dimension="12px" />

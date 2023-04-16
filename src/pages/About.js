@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 function About() {
     return (
         <>
-            <Header isSecondVisible />
             <div className="logo-container-about">
                 <div className="logo-second">Hello, I am</div>
                 <Link className="logo" to={'/'}>

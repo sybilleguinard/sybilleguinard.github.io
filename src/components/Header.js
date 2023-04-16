@@ -1,45 +1,58 @@
 import './Header.css';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useNavigate, useLocation, NavLink, Link } from 'react-router-dom';
 import { useWindowSize } from '../Utils';
 import Arrow from '../components/Arrow';
 import { useEffect } from 'react';
 
-function Header({ isSecondVisible, isSecondMobileVisible }) {
+function Header() {
     const [width, height] = useWindowSize();
+    const [fade, setFade] = useState('d-none');
     const [burgerActive, setBurgerActive] = useState(false);
+    const [history, setHistory] = useState([]);
     const path = useLocation().pathname;
+
+    useEffect(() => {
+        const pages = {
+            with: ['/', '/about', '/contact'],
+            wihtout: ['/artworks', '/portfolio'],
+        };
+        const previous = history.length ? history[history.length - 1] : '';
+
+        if (pages.with.includes(path)) {
+            if (pages.with.includes(previous)) setFade('');
+            else setFade('fade-in');
+        } else {
+            if (pages.with.includes(previous)) setFade('fade-out');
+            else setFade('d-none');
+        }
+
+        setHistory([...history, path]);
+    }, [path]);
+
+    useEffect(() => {
+        console.log(fade);
+        setTimeout(() => {
+            if (fade === 'fade-in') setFade('');
+            else if (fade === 'fade-out') setFade('d-none');
+        }, 1300);
+    }, [fade]);
 
     const LogoContainer = () => {
         if (width > 1000)
-            switch (path) {
-                case '/':
-                case '/about':
-                case '/contact':
-                    return (
-                        <div className="logo-container">
-                            <div className="logo-second">Hello, I am</div>
-                            <Link className="logo" to={'/'}>
-                                Sybille Guinard
-                            </Link>
-                            <div className="logo-second">
-                                Art director junior,
-                                <br />
-                                based in Lyon.
-                            </div>
-                        </div>
-                    );
-                case '/artworks':
-                case '/portfolio':
-                default:
-                    return (
-                        <div className="logo-container">
-                            <Link className={'logo ' + (width < 1000 && path === '/about' && ' d-none')} to={'/'}>
-                                Sybille Guinard
-                            </Link>
-                        </div>
-                    );
-            }
+            return (
+                <div className="logo-container">
+                    <div className={'logo-second ' + fade}>Hello, I am</div>
+                    <Link className="logo" to={'/'}>
+                        Sybille Guinard
+                    </Link>
+                    <div className={'logo-second ' + fade}>
+                        Art director junior,
+                        <br />
+                        based in Lyon.
+                    </div>
+                </div>
+            );
         else
             switch (path) {
                 case '/':

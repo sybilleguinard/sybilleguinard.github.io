@@ -7,7 +7,6 @@ import data from '../data.json';
 function Projets() {
     return (
         <>
-            <Header />
             <Carousel children={data.projects} path="" />
             <Footer />
         </>

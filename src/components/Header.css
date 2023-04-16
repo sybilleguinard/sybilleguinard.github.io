@@ -15,6 +15,9 @@
 .logo-second {
     position: absolute;
     font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: max-width 1s;
 }
 .logo {
     font-size: 20px;
@@ -60,6 +63,14 @@
     width: 30px;
     height: 1px;
     transition: height 0.2s;
+}
+.fade-in {
+    /* max-width: 220px; */
+    animation: fade 1.3s;
+}
+.fade-out {
+    /* max-width: 0; */
+    animation: fadeOut 1.3s ;
 }
 
 @media (max-width: 1000px) {
@@ -143,5 +154,26 @@
     }
     .header.home .logo-second:first-child {
         top: 50px;
+    }
+}
+
+@keyframes fade {
+    0% {
+        max-width: 0px;
+    }
+    10% {
+        max-width: 0px;
+    }
+    100% {
+        max-width: 250px;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        max-width: 250px;
+    }
+    100% {
+        max-width: 0px;
     }
 }

@@ -6,7 +6,6 @@ import './Error.css';
 function Error() {
     return (
         <>
-            <Header />
             <div className="error-404-container">
                 <div className="error-404">ERROR<span> 404</span></div>
             </div>

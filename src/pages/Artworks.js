@@ -9,10 +9,6 @@ import data from '../data.json';
 function Artworks() {
     return (
         <>
-            <Helmet>
-                <title>Sybille Guinard</title>
-            </Helmet>
-            <Header />
             <Carousel children={data.artworks} hasChildren />
             <Footer />
         </>

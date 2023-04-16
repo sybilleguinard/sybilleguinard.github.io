@@ -1,4 +1,4 @@
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Artworks from '../pages/Artworks';
@@ -8,11 +8,17 @@ import DetailProjet from '../pages/DetailProjet';
 import Contact from '../pages/Contact';
 import About from '../pages/About';
 import Error from '../pages/Error';
+import Header from '../components/Header';
 
 function App() {
     return (
         <HelmetProvider>
+            <Helmet>
+                <title>Sybille Guinard</title>
+            </Helmet>
             <Router>
+                <Header />
+
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/artworks" element={<Artworks />} />

@@ -21,21 +21,17 @@ function Home() {
         const interval = setInterval(() => {
             if (!pause) setStep(step => (step + 1) % data.home.length);
             else setPause(false);
-        }, 50000);
+        }, 300000);
         return () => clearInterval(interval);
     }, [pause]);
 
     return (
         <>
-            <Helmet>
-                <title>Sybille Guinard</title>
-            </Helmet>
-            <Header isSecondVisible />
             <section className="Home-carousel-container">
                 <div className="Home-carousel" style={{ '--step': step }}>
-                    <img src={img1} alt=">Image de présentation" />
-                    <img src={img2} alt=">Image de présentation" />
-                    <img src={img3} alt=">Image de présentation" />
+                    <img src={img1} alt="Image de présentation" />
+                    <img src={img2} alt="Image de présentation" />
+                    <img src={img3} alt="Image de présentation" />
                 </div>
                 <div className="Home-carousel-buttons">
                     <div
