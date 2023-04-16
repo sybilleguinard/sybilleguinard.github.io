@@ -1,20 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
 import Arrow from '../components/Arrow';
 import './DetailProjet.css';
-import { useNavigate, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import data from '../data.json';
 
 function DetailProjet() {
-    const to = useNavigate();
-
-    const img = require('../uploads/projets/presentations/desktop/' +
-        data.projects.filter(a => String(a.id) === new URLSearchParams(window.location.search).get('id'))[0]
-            .project_path);
 
     const [windowScroll, setWindowScroll] = useState(0);
+    const [content, setContent] = useState(data.projects.filter(a => String(a.id) === new URLSearchParams(window.location.search).get('id'))[0]
+    .project_path)
 
     function scrollTop() {
         window.scrollTo({
@@ -36,7 +31,13 @@ function DetailProjet() {
                     <Arrow direction="1px 0 0 1px" hover="3px 0 0 3px" dimension="12px" />
                     <p>Voir les autres projets</p>
                 </Link>
-                <img className="detail-projet-img" src={img} alt="Description d'un projet" />
+                <div className='project-container'>
+                    {
+                    content.map((image, key) => {
+                return <img className="detail-projet-img" src={require('../uploads/projets/presentations/desktop/' + image)} key={key} alt="Description d'un projet" />
+
+                    })}
+                </div>
                 <Arrow
                     onClick={scrollTop}
                     direction="1px 1px 0 0"
