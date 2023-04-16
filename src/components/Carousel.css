@@ -63,7 +63,7 @@
     transition: filter 0.3s;
 }
 .children-pic-container {
-    max-width: 1300px;
+    max-width: 1700px;
     display: flex;
     margin: auto;
     gap: 10px;
