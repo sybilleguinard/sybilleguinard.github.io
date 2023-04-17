@@ -21,7 +21,7 @@ function Home() {
         const interval = setInterval(() => {
             if (!pause) setStep(step => (step + 1) % data.home.length);
             else setPause(false);
-        }, 3000);
+        }, 5000);
         return () => clearInterval(interval);
     }, [pause]);
 
