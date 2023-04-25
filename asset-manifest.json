@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e31dd60e.css",
-    "main.js": "/static/js/main.21fe32c8.js",
+    "main.css": "/static/css/main.809dcae6.css",
+    "main.js": "/static/js/main.28f10995.js",
     "static/media/SL15.png": "/static/media/SL15.6566f00a38cd111ea364.png",
     "static/media/CAUSES_2-min.png": "/static/media/CAUSES_2-min.308341e4f2395203e361.png",
     "static/media/CAUSES_3-min.png": "/static/media/CAUSES_3-min.f6fc682edae7ad8c87f6.png",
@@ -60,24 +60,26 @@
     "static/media/girl2_1.webp": "/static/media/girl2_1.b1fa3bb56b5d6a8f8bcd.webp",
     "static/media/girl2_3.webp": "/static/media/girl2_3.2274b95849fd891c9662.webp",
     "static/media/yuzmv_1.webp": "/static/media/yuzmv_1.24ae64ced9c601c94946.webp",
+    "static/media/Gilroy-ExtraBold.otf": "/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
+    "static/media/Gilroy-Light.otf": "/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
     "static/media/yuzmv_2.webp": "/static/media/yuzmv_2.99eae9f4200ace3000bf.webp",
     "static/media/HelveticaNeue-Medium.ttf": "/static/media/HelveticaNeue-Medium.64ab5024acf8e1619abc.ttf",
     "static/media/yuzmv_3.webp": "/static/media/yuzmv_3.3f2c107c2a8dbf754b93.webp",
     "static/media/SL1.png": "/static/media/SL1.9811aaf0eed80d643feb.png",
     "static/media/yuzmv_PREMIERE.webp": "/static/media/yuzmv_PREMIERE.f99446706dc38c77c17d.webp",
-    "static/media/miniature_causes.svg": "/static/media/miniature_causes.2e2a64dbda3af9641f98.svg",
     "static/media/yuzmv_4.webp": "/static/media/yuzmv_4.4ba078a0ffa47203f3c7.webp",
-    "static/media/miniature_treatment.svg": "/static/media/miniature_treatment.29b40556397cb3e52986.svg",
-    "static/media/miniature_sergelutens.svg": "/static/media/miniature_sergelutens.b8ea2f829b4ab51bd27b.svg",
+    "static/media/miniature_treatment.svg": "/static/media/miniature_treatment.faf5d7cea518d742913f.svg",
+    "static/media/miniature_causes.svg": "/static/media/miniature_causes.9f80286170e1fd838823.svg",
+    "static/media/miniature_sergelutens.svg": "/static/media/miniature_sergelutens.6cf3821aca3247cd9ce2.svg",
     "static/media/miniature_link.svg": "/static/media/miniature_link.c004a4ebef629f5ae944.svg",
     "index.html": "/index.html",
     "static/media/lg-arrow.svg": "/static/media/lg-arrow.e569717f0eb869dc1e855f66b2006b03.svg",
     "static/media/sm-arrow.svg": "/static/media/sm-arrow.0d0f6d8e948adab6219d3644a7c7d78e.svg",
-    "main.e31dd60e.css.map": "/static/css/main.e31dd60e.css.map",
-    "main.21fe32c8.js.map": "/static/js/main.21fe32c8.js.map"
+    "main.809dcae6.css.map": "/static/css/main.809dcae6.css.map",
+    "main.28f10995.js.map": "/static/js/main.28f10995.js.map"
   },
   "entrypoints": [
-    "static/css/main.e31dd60e.css",
-    "static/js/main.21fe32c8.js"
+    "static/css/main.809dcae6.css",
+    "static/js/main.28f10995.js"
   ]
 }
