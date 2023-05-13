@@ -115,10 +115,10 @@ function Header() {
                 <div className="burger" />
             </div>
             <nav className={'navbar ' + (burgerActive && 'active ') + (path === '/' && ' navbar-home')}>
-                <NavLink to={'/portfolio'}>Portfolio</NavLink>
-                <NavLink to={'/artworks'}>Artworks</NavLink>
-                <NavLink to={'/about'}>About</NavLink>
-                <NavLink to={'/contact'}>Contact</NavLink>
+                <NavLink to={'/portfolio'}>portfolio</NavLink>
+                <NavLink to={'/artworks'}>artworks</NavLink>
+                <NavLink to={'/about'}>about</NavLink>
+                <NavLink to={'/contact'}>contact</NavLink>
             </nav>
         </section>
     );

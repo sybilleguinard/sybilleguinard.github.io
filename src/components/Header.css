@@ -21,9 +21,8 @@
 }
 .logo {
     font-size: 20px;
-    letter-spacing: 2px;
     cursor: pointer;
-    font-family: Helvetica-Medium;
+    font-family: NotoSans-Bold;
 }
 .navbar {
     display: flex;
@@ -35,9 +34,10 @@
     text-decoration: none;
     color: black;
     z-index: 2;
+    text-transform: none;
 }
 .navbar .active {
-    font-family: Helvetica-Medium;
+    font-family: NotoSans-Bold;
 }
 .burger-container {
     width: 32px;
@@ -65,11 +65,9 @@
     transition: height 0.2s;
 }
 .fade-in {
-    /* max-width: 220px; */
     animation: fade 1.3s;
 }
 .fade-out {
-    /* max-width: 0; */
     animation: fadeOut 1.3s ;
 }
 

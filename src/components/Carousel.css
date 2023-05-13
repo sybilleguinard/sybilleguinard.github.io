@@ -49,9 +49,8 @@
 }
 .click-drag {
     text-transform: uppercase;
-    font-family: Helvetica-Medium;
     font-size: 10px;
-    letter-spacing: 1.2px;
+    font-family: NotoSans-Bold;
     text-align: right;
     width: 85%;
     height: 15px;
@@ -132,9 +131,8 @@
 }
 .text-container h2 {
     font-size: 14px;
-    letter-spacing: 1.7px;
     text-transform: uppercase;
-    font-family: Helvetica-Medium;
+    font-family: NotoSans-Bold;
 }
 .text-container p {
     padding-top: 4px;

@@ -11,11 +11,10 @@
 }
 
 .contact-container a {
-    font-family: Helvetica-Medium;
+    font-family: NotoSans-Bold;
     text-transform: uppercase;
     color: black;
     font-size: 14px;
-    letter-spacing: 2px;
     text-decoration: none;
 }
 .arrows-desc {

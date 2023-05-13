@@ -12,11 +12,10 @@
 }
 .links a {
     text-decoration: none;
-    font-family: Helvetica-Medium;
+    font-family: NotoSans-Bold;
     margin-left: 30px;
     color: black;
     font-size: 12px;
-    letter-spacing: 1.7px;
     position: relative;
 }
 .links a:hover {
@@ -24,7 +23,6 @@
 }
 .copyright {
     font-size: 10px;
-    letter-spacing: 1.2px;
 }
 .arrows-container-footer {
     position: absolute;
