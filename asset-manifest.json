@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c04ad99.css",
-    "main.js": "/static/js/main.28f10995.js",
+    "main.css": "/static/css/main.b9e78975.css",
+    "main.js": "/static/js/main.b95c9084.js",
     "static/media/SL15.png": "/static/media/SL15.6566f00a38cd111ea364.png",
     "static/media/CAUSES_2-min.png": "/static/media/CAUSES_2-min.308341e4f2395203e361.png",
     "static/media/CAUSES_3-min.png": "/static/media/CAUSES_3-min.f6fc682edae7ad8c87f6.png",
@@ -25,6 +25,8 @@
     "static/media/LINK_5.png": "/static/media/LINK_5.e35598732d75b3c356a1.png",
     "static/media/SL17.png": "/static/media/SL17.3cfd9fabb0f2466bb456.png",
     "static/media/SL16.png": "/static/media/SL16.20329b74671cd270d7b1.png",
+    "static/media/NotoSans-ExtraLight.ttf": "/static/media/NotoSans-ExtraLight.3d6596bd0d8f05b1aac6.ttf",
+    "static/media/NotoSans-Bold.ttf": "/static/media/NotoSans-Bold.c0e71cceed04ac588779.ttf",
     "static/media/img1.webp": "/static/media/img1.91d1681f32cb9082e606.webp",
     "static/media/LINK_4.png": "/static/media/LINK_4.2da5e3c90b736b1a145b.png",
     "static/media/img1.png": "/static/media/img1.b8c0d5eea2e519245c44.png",
@@ -34,11 +36,9 @@
     "static/media/SL6.png": "/static/media/SL6.0344758f7ee24948d5dd.png",
     "static/media/SL3.png": "/static/media/SL3.a96b6e7d1419763f3804.png",
     "static/media/LINK_1.png": "/static/media/LINK_1.2da00b73f9e7086de05c.png",
-    "static/media/HelveticaNeue-Bold-02.ttf": "/static/media/HelveticaNeue-Bold-02.abab559f661a7d46e486.ttf",
     "static/media/img3.webp": "/static/media/img3.f5783b48430b344ce22e.webp",
     "static/media/img2.webp": "/static/media/img2.10e30cfeefb668716764.webp",
     "static/media/beretta_premiere.webp": "/static/media/beretta_premiere.8ef81b0aea7380f55b30.webp",
-    "static/media/HelveticaNeue-UltraLight-06.ttf": "/static/media/HelveticaNeue-UltraLight-06.1aa868d7f5fd2e073e49.ttf",
     "static/media/SL4.png": "/static/media/SL4.ea2d20db73a969aea837.png",
     "static/media/savannah_4.webp": "/static/media/savannah_4.e6a0289021df3e19ad52.webp",
     "static/media/savannah_PREMIERE.webp": "/static/media/savannah_PREMIERE.0a070fbc2cf77d8d4e3d.webp",
@@ -60,10 +60,7 @@
     "static/media/girl2_1.webp": "/static/media/girl2_1.b1fa3bb56b5d6a8f8bcd.webp",
     "static/media/girl2_3.webp": "/static/media/girl2_3.2274b95849fd891c9662.webp",
     "static/media/yuzmv_1.webp": "/static/media/yuzmv_1.24ae64ced9c601c94946.webp",
-    "static/media/Gilroy-ExtraBold.otf": "/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
-    "static/media/Gilroy-Light.otf": "/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
     "static/media/yuzmv_2.webp": "/static/media/yuzmv_2.99eae9f4200ace3000bf.webp",
-    "static/media/HelveticaNeue-Medium.ttf": "/static/media/HelveticaNeue-Medium.64ab5024acf8e1619abc.ttf",
     "static/media/yuzmv_3.webp": "/static/media/yuzmv_3.3f2c107c2a8dbf754b93.webp",
     "static/media/SL1.png": "/static/media/SL1.9811aaf0eed80d643feb.png",
     "static/media/yuzmv_PREMIERE.webp": "/static/media/yuzmv_PREMIERE.f99446706dc38c77c17d.webp",
@@ -75,11 +72,11 @@
     "index.html": "/index.html",
     "static/media/lg-arrow.svg": "/static/media/lg-arrow.e569717f0eb869dc1e855f66b2006b03.svg",
     "static/media/sm-arrow.svg": "/static/media/sm-arrow.0d0f6d8e948adab6219d3644a7c7d78e.svg",
-    "main.2c04ad99.css.map": "/static/css/main.2c04ad99.css.map",
-    "main.28f10995.js.map": "/static/js/main.28f10995.js.map"
+    "main.b9e78975.css.map": "/static/css/main.b9e78975.css.map",
+    "main.b95c9084.js.map": "/static/js/main.b95c9084.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c04ad99.css",
-    "static/js/main.28f10995.js"
+    "static/css/main.b9e78975.css",
+    "static/js/main.b95c9084.js"
   ]
 }
