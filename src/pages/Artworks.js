@@ -1,16 +1,18 @@
 import './Artworks.css';
 import React from 'react';
-import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
 import { Helmet } from 'react-helmet';
 import data from '../data.json';
+import { useWindowSize } from '../Utils';
 
 function Artworks() {
+    const [width, height] = useWindowSize();
+
     return (
         <>
-            <Carousel children={data.artworks} hasChildren />
-            <Footer />
+            <Carousel clickToViewMore={width < 1000 && true} children={data.artworks} hasChildren />
+            {width > 1000 && <Footer />}
         </>
     );
 }

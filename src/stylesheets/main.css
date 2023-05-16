@@ -15,7 +15,7 @@
     padding: 2px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, 0.8);
     -webkit-box-shadow: inset 0px 0px 0px 1px var(--beige);
     -moz-box-shadow: inset 0px 0px 0px 1px var(--beige);
     box-shadow: inset 0px 0px 0px 1px var(--beige);

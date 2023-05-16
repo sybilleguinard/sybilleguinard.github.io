@@ -9,7 +9,7 @@
         },
         {
             "id": 1,
-            "miniature_path": "miniature_causes.svg",
+            "miniature_path": "miniature_link.svg",
             "title": "Neurosciences Part I / CAUSES",
             "desc": "Posters serie inspired by a mind map from Auckland University of Technology's Integrated Mental Health Science (NURS603) course explaining the various causes of depression. Project's DNA : illustrating science.",
             "project_path": ["CAUSES_1.png", "CAUSES_2-min.png", "CAUSES_3-min.png"]
@@ -23,7 +23,7 @@
         },
         {
             "id": 3,
-            "miniature_path": "miniature_sergelutens.svg",
+            "miniature_path": "miniature_treatment.svg",
             "title": "Serge Lutens",
             "desc": "Creation of a new visual identity for the Serge Lutens brand, as well as an anniversary campaign based on the new identity concept, on the occasion of the 30th anniversary of the « Féminité du Bois » perfume.",
             "project_path": ["SL1.png","SL2.png","SL3.png","SL4.png","SL5.png","SL6.png","SL7.png","SL8.png","SL9.png","SL10.png","SL11.png","SL12.png","SL13.png","SL14.png","SL15.png","SL16.png","SL17.png","SL18.png"]
@@ -33,7 +33,7 @@
         {
             "id": 0,
             "image_path": "img1.webp",
-            "project_id": 0
+            "project_id": 2
         },
         {
             "id": 1,
@@ -81,6 +81,13 @@
             "title": "Beretta M9",
             "desc": "Format : 50 x 65 cm",
             "children_paths": ["beretta_1.webp", "beretta_2.webp", "beretta_3.webp", "beretta_4.webp"]
+        },
+        {
+            "id": 4,
+            "miniature_path": "vertigo_premiere.webp",
+            "title": "VERTIGO",
+            "desc": " peinture sur bois / 50x60 cm",
+            "children_paths": ["vertigo_1.webp", "vertigo_2.webp", "vertigo_3.webp", "vertigo_4.webp"]
         }
     ],
     "contact": {
@@ -88,6 +95,6 @@
     },
     "about": {
         "avatar_path": "img1.png",
-        "desc": " Student at E-artsup Lyon, Grand École program.#nI’m driven by the sense of satisfaction that comes from successfully communicating visually the ideas or concepts that I feel internally.#nHere you will find some of my creative works, made on various mediums, both digital and manual, through which I hope to best reflect my ideas and vision of art and communication.#n(Although the number of small dots on my drawings might suggest otherwise, I’m of sound mind)#gCurrently looking for a work-study program !\nEn recherche d’alternance !"
+        "desc": " Student at E-artsup Lyon, Grand Ecole program.#nI’m driven by the sense of satisfaction that comes from successfully communicating visually the ideas or concepts that I feel internally.#nHere you will find some of my creative works, made on various mediums, both digital and manual, through which I hope to best reflect my ideas and vision of art and communication.#n(Although the number of small dots on my drawings might suggest otherwise, I’m of sound mind)#gCurrently looking for a work-study program !\nEn recherche d’alternance !"
     }
 }

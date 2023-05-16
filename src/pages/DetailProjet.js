@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 import data from '../data.json';
 
 function DetailProjet() {
-
     const [windowScroll, setWindowScroll] = useState(0);
-    console.log(window.location.href.split("=")[1]);
-    const [content, setContent] = useState(data.projects.filter(a => String(a.id) === window.location.href.split("=")[1])[0]
-    .project_path)
+    console.log(window.location.href.split('=')[1]);
+    const [content, setContent] = useState(
+        data.projects.filter(a => String(a.id) === window.location.href.split('=')[1])[0].project_path
+    );
 
     function scrollTop() {
         window.scrollTo({
@@ -32,11 +32,16 @@ function DetailProjet() {
                     <Arrow direction="1px 0 0 1px" hover="3px 0 0 3px" dimension="12px" />
                     <p>Voir les autres projets</p>
                 </Link>
-                <div className='project-container'>
-                    {
-                    content.map((image, key) => {
-                return <img className="detail-projet-img" src={require('../uploads/projets/presentations/desktop/' + image)} key={key} alt="Description d'un projet" />
-
+                <div className="project-container">
+                    {content.map((image, key) => {
+                        return (
+                            <img
+                                className="detail-projet-img"
+                                src={require('../uploads/projets/presentations/desktop/' + image)}
+                                key={key}
+                                alt="Description d'un projet"
+                            />
+                        );
                     })}
                 </div>
                 <Arrow

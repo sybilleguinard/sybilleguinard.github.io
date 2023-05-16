@@ -10,11 +10,15 @@
     width: 100%;
     transform: translateX(calc(-100% * var(--step)));
     transition: transform 0.5s ease;
+    flex-wrap: nowrap;
+}
+.Home-carousel a {
+    width: 100%;
+    cursor: pointer;
+    min-width: 100%;
 }
 .Home-carousel img {
-    width: 100%;
-    min-width: 100%;
-    cursor: pointer;
+    max-width: 100%;
 }
 .Home-carousel-buttons {
     position: absolute;
@@ -35,4 +39,16 @@
     border: 1px var(--beige) solid;
     transition: border 0.1s;
     cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .Home-carousel img {
+        max-height: calc(100vh - 230px);
+        max-width: none;
+    }
+    .Home-carousel a {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
 }

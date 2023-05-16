@@ -2,8 +2,10 @@ import './Carousel.css';
 import React, { useEffect, useRef, useState } from 'react';
 import Cross from './Cross';
 import { useNavigate } from 'react-router-dom';
+import { useWindowSize } from '../Utils';
+import Arrow from './Arrow';
 
-function Carousel({ children, hasChildren }) {
+function Carousel({ children, hasChildren, clickToViewMore }) {
     const [step, setStep] = useState(2);
     const [stepWidth, setStepWidth] = useState(-1000 - 995 - 718);
     const [currentWidth, setCurrentWidth] = useState(995);
@@ -12,6 +14,7 @@ function Carousel({ children, hasChildren }) {
     const [childrenContainerClasses, setChildrenContainerClasses] = useState(' hidden h-none');
     const [content, setContent] = useState(children);
     const ref = useRef();
+    const [width, height] = useWindowSize();
 
     const to = useNavigate();
 
@@ -82,7 +85,7 @@ function Carousel({ children, hasChildren }) {
                 setTimeout(() => {
                     ref.current.style.transition = '';
                     child.style.transition = '0s transform';
-                    child.lastChild.style.transition = '0s all'
+                    child.lastChild.style.transition = '0s all';
 
                     setStep(2);
 
@@ -106,14 +109,13 @@ function Carousel({ children, hasChildren }) {
                     ref.current.style.transition = '';
 
                     child.style.transition = '0s transform';
-                    child.lastChild.style.transition = '0s all'
+                    child.lastChild.style.transition = '0s all';
                     setStep(content.length - 3);
 
                     setTimeout(() => {
                         ref.current.style.transition = 'all .3s ease';
                         child.style.transition = '.3s transform';
                         child.lastChild.style.transition = 'ax-height 0.3s, padding-top 0.3s';
-                    
                     }, 100);
                 }, 300);
             }
@@ -185,8 +187,12 @@ function Carousel({ children, hasChildren }) {
                         {Content}
                         <div className="white" />
                     </div>
-                    <div className="side left" onClick={previousStep} />
-                    <div className="side right" onClick={nextStep} />
+                    <div className="side left" onClick={previousStep}>
+                        {width < 1000 && <Arrow direction="1px 0 0 1px" />}
+                    </div>
+                    <div className="side right" onClick={nextStep}>
+                        {width < 1000 && <Arrow direction=" 1px 0  0 1px" />}
+                    </div>
                 </div>
                 {hasChildren ? (
                     <div className={'children-pic-container' + (childActive !== null ? '' : childrenContainerClasses)}>
@@ -197,8 +203,9 @@ function Carousel({ children, hasChildren }) {
                     <></>
                 )}
             </section>
-                        <p className={'click-drag' + (childActive !== null ? ' d-none' : '')}>Click to view more :)</p>
-
+            <p className={'click-drag' + (childActive !== null || !clickToViewMore ? ' d-none' : '')}>
+                Click to view more :)
+            </p>
         </>
     );
 }

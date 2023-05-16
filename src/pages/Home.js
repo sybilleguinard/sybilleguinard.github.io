@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import '../stylesheets/main.css';
 import './Home.css';
-import Header from '../components/Header';
 import Footer from '../components/Footer';
 import img1 from '../uploads/home/img1.webp';
 import img2 from '../uploads/home/img2.webp';
 import img3 from '../uploads/home/img3.webp';
-import { Helmet } from 'react-helmet';
-import data from '../data.json'
+import data from '../data.json';
+import { Link } from 'react-router-dom';
 
 function Home() {
     const [step, setStep] = useState(0);
@@ -29,9 +28,15 @@ function Home() {
         <>
             <section className="Home-carousel-container">
                 <div className="Home-carousel" style={{ '--step': step }}>
-                    <img src={img1} alt="Image de présentation" />
-                    <img src={img2} alt="Image de présentation" />
-                    <img src={img3} alt="Image de présentation" />
+                    <Link to={'/detail-projet?id=' + data.home[0].project_id}>
+                        <img src={img1} alt="Image de présentation" />
+                    </Link>
+                    <Link to={'/detail-projet?id=' + data.home[1].project_id}>
+                        <img src={img2} alt="Image de présentation" />
+                    </Link>
+                    <Link to={'/detail-projet?id=' + data.home[2].project_id}>
+                        <img src={img3} alt="Image de présentation" />
+                    </Link>
                 </div>
                 <div className="Home-carousel-buttons">
                     <div

@@ -105,7 +105,7 @@ function Header() {
     };
 
     return (
-        <section className={'header ' + (path === '/' && ' home')}>
+        <section className={'header ' + (path === '/' && 'home')}>
             <LogoContainer />
             <div
                 className={'burger-container ' + (burgerActive && 'active ') + (path === '/' && ' d-none')}
@@ -114,11 +114,20 @@ function Header() {
                 <div className="burger" />
                 <div className="burger" />
             </div>
+            <div className={path === '/' && 'invisible-onclick'} onClick={() => setBurgerActive(false)}></div>
             <nav className={'navbar ' + (burgerActive && 'active ') + (path === '/' && ' navbar-home')}>
-                <NavLink to={'/portfolio'}>portfolio</NavLink>
-                <NavLink to={'/artworks'}>artworks</NavLink>
-                <NavLink to={'/about'}>about</NavLink>
-                <NavLink to={'/contact'}>contact</NavLink>
+                <NavLink to={'/portfolio'} onClick={() => setBurgerActive(false)}>
+                    portfolio
+                </NavLink>
+                <NavLink to={'/artworks'} onClick={() => setBurgerActive(false)}>
+                    artworks
+                </NavLink>
+                <NavLink to={'/about'} onClick={() => setBurgerActive(false)}>
+                    about
+                </NavLink>
+                <NavLink to={'/contact'} onClick={() => setBurgerActive(false)}>
+                    contact
+                </NavLink>
             </nav>
         </section>
     );
