@@ -188,10 +188,10 @@ function Carousel({ children, hasChildren, clickToViewMore }) {
                         <div className="white" />
                     </div>
                     <div className="side left" onClick={previousStep}>
-                        {width < 1000 && <Arrow direction="1px 0 0 1px" />}
+                        {width < 1000 && <Arrow direction="1px 0 0 1px" hover="2px 0 0 2px" />}
                     </div>
                     <div className="side right" onClick={nextStep}>
-                        {width < 1000 && <Arrow direction=" 1px 0  0 1px" />}
+                        {width < 1000 && <Arrow direction="1px 0  0 1px" hover="2px 0  0 2px" />}
                     </div>
                 </div>
                 {hasChildren ? (

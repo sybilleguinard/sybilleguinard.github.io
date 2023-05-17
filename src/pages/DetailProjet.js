@@ -4,13 +4,12 @@ import Arrow from '../components/Arrow';
 import './DetailProjet.css';
 import { Link } from 'react-router-dom';
 import data from '../data.json';
+import { useWindowSize } from '../Utils';
 
 function DetailProjet() {
     const [windowScroll, setWindowScroll] = useState(0);
-    console.log(window.location.href.split('=')[1]);
-    const [content, setContent] = useState(
-        data.projects.filter(a => String(a.id) === window.location.href.split('=')[1])[0].project_path
-    );
+    const [content, setContent] = useState([]);
+    const [width, height] = useWindowSize();
 
     function scrollTop() {
         window.scrollTo({
@@ -23,7 +22,23 @@ function DetailProjet() {
         window.addEventListener('scroll', () => {
             setWindowScroll(document.documentElement.scrollTop);
         });
+        setPageContent(width);
     }, []);
+
+    useEffect(() => {
+        console.log(width);
+        setPageContent(width);
+    }, [width]);
+
+    function setPageContent(width) {
+        if (width > 1000) {
+            setContent(data.projects.filter(a => String(a.id) === window.location.href.split('=')[1])[0].project_path);
+        } else {
+            setContent(
+                data.projects.filter(a => String(a.id) === window.location.href.split('=')[1])[0].mobile_project_path
+            );
+        }
+    }
 
     return (
         <>
@@ -37,7 +52,11 @@ function DetailProjet() {
                         return (
                             <img
                                 className="detail-projet-img"
-                                src={require('../uploads/projets/presentations/desktop/' + image)}
+                                src={
+                                    width > 1000
+                                        ? require('../uploads/projets/presentations/desktop/' + image)
+                                        : require('../uploads/projets/presentations/mobile/' + image)
+                                }
                                 key={key}
                                 alt="Description d'un projet"
                             />

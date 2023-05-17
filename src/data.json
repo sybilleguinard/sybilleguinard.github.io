@@ -5,45 +5,49 @@
             "miniature_path": "miniature_link.svg",
             "title": "L-ink",
             "desc": "As a result of a UI/UX project, L-ink is a fictional platform aimed at connecting tattoo artists and clients. From financial management to appointment scheduling, and highlighting the tattoo artists' projects, L-ink positions itself as a comprehensive tool for tattoo artists and a practical and stylish discovery space for clients.",
-            "project_path": ["LINK_1.png","LINK_2.png","LINK_3.png","LINK_4.png","LINK_5.png","LINK_7.png"]
+            "project_path": ["LINK_1.png","LINK_2.png","LINK_3.png","LINK_4.png","LINK_5.png","LINK_7.png"],
+            "mobile_project_path": ["link_mobile_1-min.png", "link_mobile_2-min.png", "link_mobile_3-min.png", "link_mobile_4-min.png", "link_mobile_5-min.png", "link_mobile_6-min.png", "link_mobile_7-min.png", "link_mobile_8-min.png", "link_mobile_9-min.png", "link_mobile_10-min.png", "link_mobile_11-min.png", "link_mobile_12-min.png", "link_mobile_13-min.png"]
         },
         {
             "id": 1,
             "miniature_path": "miniature_link.svg",
             "title": "Neurosciences Part I / CAUSES",
             "desc": "Posters serie inspired by a mind map from Auckland University of Technology's Integrated Mental Health Science (NURS603) course explaining the various causes of depression. Project's DNA : illustrating science.",
-            "project_path": ["CAUSES_1.png", "CAUSES_2-min.png", "CAUSES_3-min.png"]
+            "project_path": ["CAUSES_1.png", "CAUSES_2-min.png", "CAUSES_3-min.png"],
+            "mobile_project_path": ["mobile_cause_1-min.png", "mobile_cause_2-min.png", "mobile_cause_3-min.png", "mobile_cause_4-min.png", "mobile_cause_5-min.png"]
         },
         {
             "id": 2,
             "miniature_path": "miniature_treatment.svg",
             "title": "Neurosciences Part II / TREATMENTS",
             "desc": "Posters serie inspired by a mind map from Auckland University of Technology's Integrated Mental Health Science (NURS603) course, explaining the different treatments for depression. Project’s DNA : illustrating science.",
-            "project_path": ["TREATMENT_1.png","TREATMENT_2.png","TREATMENT_3.png","TREATMENT_4.png","TREATMENT_5.png"]
+            "project_path": ["TREATMENT_1.png","TREATMENT_2.png","TREATMENT_3.png","TREATMENT_4.png","TREATMENT_5.png"],
+            "mobile_project_path": ["mobile_treatment_1-min.png", "mobile_treatment_2-min.png", "mobile_treatment_3-min.png", "mobile_treatment_4-min.png", "mobile_treatment_5-min.png"]
         },
         {
             "id": 3,
             "miniature_path": "miniature_treatment.svg",
             "title": "Serge Lutens",
             "desc": "Creation of a new visual identity for the Serge Lutens brand, as well as an anniversary campaign based on the new identity concept, on the occasion of the 30th anniversary of the « Féminité du Bois » perfume.",
-            "project_path": ["SL1.png","SL2.png","SL3.png","SL4.png","SL5.png","SL6.png","SL7.png","SL8.png","SL9.png","SL10.png","SL11.png","SL12.png","SL13.png","SL14.png","SL15.png","SL16.png","SL17.png","SL18.png"]
+            "project_path": ["SL1.png","SL2.png","SL3.png","SL4.png","SL5.png","SL6.png","SL7.png","SL8.png","SL9.png","SL10.png","SL11.png","SL12.png","SL13.png","SL14.png","SL15.png","SL16.png","SL17.png","SL18.png"],
+            "mobile_project_path": ["SL_mobile_1-min.png", "SL_mobile_2-min.png", "SL_mobile_3-min.png", "SL_mobile_4-min.png", "SL_mobile_5-min.png"]
         }
     ],
     "home": [
         {
             "id": 0,
             "image_path": "img1.webp",
-            "project_id": 2
+            "project_link": "/artworks"
         },
         {
             "id": 1,
             "image_path": "img2.webp",
-            "project_id": 1
+            "project_link": "/detail-projet?id=1"
         },
         {
             "id": 2,
             "image_path": "img3.webp",
-            "project_id": 2
+            "project_link": "/artworks"
         }
     ],
     "artworks": [

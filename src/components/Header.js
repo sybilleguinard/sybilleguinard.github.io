@@ -105,17 +105,17 @@ function Header() {
     };
 
     return (
-        <section className={'header ' + (path === '/' && 'home')}>
+        <section className={'header ' + (path === '/' ? 'home' : undefined)}>
             <LogoContainer />
             <div
-                className={'burger-container ' + (burgerActive && 'active ') + (path === '/' && ' d-none')}
+                className={'burger-container ' + (burgerActive ? 'active ' : undefined) + (path === '/' ? ' d-none' : undefined)}
                 onClick={() => setBurgerActive(val => !val)}>
                 <div className="burger" />
                 <div className="burger" />
                 <div className="burger" />
             </div>
-            <div className={path === '/' && 'invisible-onclick'} onClick={() => setBurgerActive(false)}></div>
-            <nav className={'navbar ' + (burgerActive && 'active ') + (path === '/' && ' navbar-home')}>
+            <div className={path === '/' ? 'invisible-onclick' : undefined} onClick={() => setBurgerActive(false)}></div>
+            <nav className={'navbar ' + (burgerActive ? 'active ' : undefined) + (path === '/' ? ' navbar-home' : undefined)}>
                 <NavLink to={'/portfolio'} onClick={() => setBurgerActive(false)}>
                     portfolio
                 </NavLink>

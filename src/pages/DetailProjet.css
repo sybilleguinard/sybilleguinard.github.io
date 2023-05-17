@@ -24,6 +24,7 @@
     z-index: 0;
 }
 .to-top {
+    z-index: 2;
     position: absolute;
     position: fixed;
     top: 88vh;

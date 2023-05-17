@@ -28,13 +28,13 @@ function Home() {
         <>
             <section className="Home-carousel-container">
                 <div className="Home-carousel" style={{ '--step': step }}>
-                    <Link to={'/detail-projet?id=' + data.home[0].project_id}>
+                    <Link to={data.home[0].project_link}>
                         <img src={img1} alt="Image de présentation" />
                     </Link>
-                    <Link to={'/detail-projet?id=' + data.home[1].project_id}>
+                    <Link to={data.home[1].project_link}>
                         <img src={img2} alt="Image de présentation" />
                     </Link>
-                    <Link to={'/detail-projet?id=' + data.home[2].project_id}>
+                    <Link to={data.home[2].project_link}>
                         <img src={img3} alt="Image de présentation" />
                     </Link>
                 </div>
