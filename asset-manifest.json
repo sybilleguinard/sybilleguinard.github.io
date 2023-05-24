@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.678465ce.css",
-    "main.js": "/static/js/main.ac8c8f1c.js",
+    "main.js": "/static/js/main.34e90cf7.js",
     "static/media/SL15.png": "/static/media/SL15.6566f00a38cd111ea364.png",
     "static/media/CAUSES_2-min.png": "/static/media/CAUSES_2-min.308341e4f2395203e361.png",
     "static/media/CAUSES_3-min.png": "/static/media/CAUSES_3-min.f6fc682edae7ad8c87f6.png",
@@ -106,20 +106,20 @@
     "static/media/yuzmv_3.webp": "/static/media/yuzmv_3.3f2c107c2a8dbf754b93.webp",
     "static/media/SL1.png": "/static/media/SL1.9811aaf0eed80d643feb.png",
     "static/media/yuzmv_PREMIERE.webp": "/static/media/yuzmv_PREMIERE.f99446706dc38c77c17d.webp",
+    "static/media/miniature_causes.svg": "/static/media/miniature_causes.2e2a64dbda3af9641f98.svg",
     "static/media/yuzmv_4.webp": "/static/media/yuzmv_4.4ba078a0ffa47203f3c7.webp",
     "static/media/miniature_treatment.svg": "/static/media/miniature_treatment.faf5d7cea518d742913f.svg",
     "static/media/link_mobile_12-min.png": "/static/media/link_mobile_12-min.636ba6e1a5c63d7f2584.png",
-    "static/media/miniature_causes.svg": "/static/media/miniature_causes.9f80286170e1fd838823.svg",
-    "static/media/miniature_sergelutens.svg": "/static/media/miniature_sergelutens.6cf3821aca3247cd9ce2.svg",
+    "static/media/miniature_sergelutens.svg": "/static/media/miniature_sergelutens.b8ea2f829b4ab51bd27b.svg",
     "static/media/miniature_link.svg": "/static/media/miniature_link.c004a4ebef629f5ae944.svg",
     "index.html": "/index.html",
     "static/media/lg-arrow.svg": "/static/media/lg-arrow.e569717f0eb869dc1e855f66b2006b03.svg",
     "static/media/sm-arrow.svg": "/static/media/sm-arrow.0d0f6d8e948adab6219d3644a7c7d78e.svg",
     "main.678465ce.css.map": "/static/css/main.678465ce.css.map",
-    "main.ac8c8f1c.js.map": "/static/js/main.ac8c8f1c.js.map"
+    "main.34e90cf7.js.map": "/static/js/main.34e90cf7.js.map"
   },
   "entrypoints": [
     "static/css/main.678465ce.css",
-    "static/js/main.ac8c8f1c.js"
+    "static/js/main.34e90cf7.js"
   ]
 }
